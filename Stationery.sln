@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StationeryAPI", "StationeryAPI\StationeryAPI.csproj", "{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StationeryWEB", "StationeryWEB\StationeryWEB.csproj", "{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B278AEB9-24FC-4B72-9201-30B7B7422160}
+	EndGlobalSection
+EndGlobal
