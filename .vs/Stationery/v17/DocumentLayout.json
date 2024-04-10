@@ -1,42 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Source\\Stationery\\",
+  "WorkspaceRootPath": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\dangvnh\\sem3-accp\\project_azure\\stationeryweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\dangvnh\\sem3-accp\\project_azure\\stationeryweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\dangvnh\\sem3-accp\\project_azure\\stationeryweb\\views\\home\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\user.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|e:\\source\\stationery\\stationeryapi\\controllers\\democorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\controllers\\democorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\dangvnh\\sem3-accp\\project_azure\\stationeryweb\\views\\home\\dealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\dealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\dangvnh\\sem3-accp\\project_azure\\stationeryweb\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\models\\democoreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\models\\democoreviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\dangvnh\\sem3-accp\\project_azure\\stationeryweb\\views\\home\\logindealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\logindealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|e:\\source\\stationery\\stationeryapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\dangvnh\\sem3-accp\\project_azure\\stationeryapi\\shoppingmodels\\tblcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\shoppingmodels\\tblcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|e:\\source\\stationery\\stationeryapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\dangvnh\\sem3-accp\\project_azure\\stationeryapi\\shoppingmodels\\tblcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\shoppingmodels\\tblcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|e:\\source\\stationery\\stationeryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\dangvnh\\sem3-accp\\project_azure\\stationeryweb\\views\\home\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\loginuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\dangvnh\\sem3-accp\\project_azure\\stationeryweb\\views\\home\\loginadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\loginadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,117 +58,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Program.cs",
-              "RelativeDocumentMoniker": "StationeryWEB\\Program.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Program.cs",
-              "RelativeToolTip": "StationeryWEB\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T12:55:07.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ShoppingWebContext.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T12:47:27.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "StationeryWEB\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "StationeryWEB\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAgwCQAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T16:19:49.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\Models\\Employee.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\Models\\Employee.cs",
-              "RelativeToolTip": "StationeryAPI\\Models\\Employee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T04:33:05.726Z"
+              "Title": "User.cshtml",
+              "DocumentMoniker": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\User.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\User.cshtml",
+              "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\User.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\User.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T12:08:20.169Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DemoCoreController.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\Controllers\\DemoCoreController.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\Controllers\\DemoCoreController.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\Controllers\\DemoCoreController.cs",
-              "RelativeToolTip": "StationeryAPI\\Controllers\\DemoCoreController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T16:24:58.369Z",
-              "EditorCaption": ""
+              "Title": "Dealer.cshtml",
+              "DocumentMoniker": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\Dealer.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Dealer.cshtml",
+              "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\Dealer.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Dealer.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T12:05:26.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAowJIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T12:08:06.408Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Index.cshtml",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-31T13:52:18.141Z",
+              "WhenOpened": "2024-04-10T12:07:16.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DemoCoreViewModel.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Models\\DemoCoreViewModel.cs",
-              "RelativeDocumentMoniker": "StationeryWEB\\Models\\DemoCoreViewModel.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Models\\DemoCoreViewModel.cs",
-              "RelativeToolTip": "StationeryWEB\\Models\\DemoCoreViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T04:11:09.008Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\Admin.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Admin.cshtml",
+              "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\Admin.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Admin.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T12:05:24.035Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Department.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\Models\\Department.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\Models\\Department.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\Models\\Department.cs",
-              "RelativeToolTip": "StationeryAPI\\Models\\Department.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "Title": "TblCustomer.cs",
+              "DocumentMoniker": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryAPI\\ShoppingModels\\TblCustomer.cs",
+              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\TblCustomer.cs",
+              "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryAPI\\ShoppingModels\\TblCustomer.cs",
+              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\TblCustomer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T04:45:07.185Z"
+              "WhenOpened": "2024-04-10T12:04:39.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TblCartItem.cs",
+              "DocumentMoniker": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryAPI\\ShoppingModels\\TblCartItem.cs",
+              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\TblCartItem.cs",
+              "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryAPI\\ShoppingModels\\TblCartItem.cs",
+              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\TblCartItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T12:04:37.846Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\Program.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\Program.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\Program.cs",
-              "RelativeToolTip": "StationeryAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T15:22:43.677Z"
+              "Title": "LoginUser.cshtml",
+              "DocumentMoniker": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\LoginUser.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\LoginUser.cshtml",
+              "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\LoginUser.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\LoginUser.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACkAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T12:01:40.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginDealer.cshtml",
+              "DocumentMoniker": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\LoginDealer.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\LoginDealer.cshtml",
+              "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\LoginDealer.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\LoginDealer.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADEAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T12:01:23.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginAdmin.cshtml",
+              "DocumentMoniker": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\LoginAdmin.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\LoginAdmin.cshtml",
+              "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\LoginAdmin.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\LoginAdmin.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADEAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-10T12:00:38.613Z"
             }
           ]
         }

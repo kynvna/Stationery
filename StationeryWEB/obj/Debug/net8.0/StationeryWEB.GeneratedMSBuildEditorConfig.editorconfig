@@ -9,39 +9,63 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StationeryWEB
 build_property.RootNamespace = StationeryWEB
-build_property.ProjectDir = E:\Source\Stationery\StationeryWEB\
+build_property.ProjectDir = C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Source\Stationery\StationeryWEB
+build_property.MSBuildProjectDirectory = C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Source/Stationery/StationeryWEB/Views/Home/Index.cshtml]
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Home/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Home/Dealer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWFsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Source/Stationery/StationeryWEB/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Home/ItemDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJdGVtRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Source/Stationery/StationeryWEB/Views/Shared/Error.cshtml]
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Home/LoginAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbkFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Home/LoginDealer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbkRlYWxlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Home/LoginUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Home/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Source/Stationery/StationeryWEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Source/Stationery/StationeryWEB/Views/_ViewImports.cshtml]
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Source/Stationery/StationeryWEB/Views/_ViewStart.cshtml]
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Source/Stationery/StationeryWEB/Views/Shared/_Layout.cshtml]
+[C:/DangVNH/Sem3-ACCP/Project_Azure/StationeryWEB/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1c40z5zssq

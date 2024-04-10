@@ -1,39 +1,6 @@
-﻿@* @model IEnumerable<WeatherForecast>
-
-@{
-    ViewData["Title"] = "Weather Forecast";
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Page Title";
 }
 
-<h2>@ViewData["Title"]</h2>
-
-@foreach (var forecast in Model)
-{
-    <div class="weather-forecast">
-        <h3>@forecast.Date.ToShortDateString()</h3>
-        <p>Temperature: @forecast.TemperatureC&deg;C</p>
-        <p>Summary: @forecast.Summary</p>
-    </div>
-} *@
-
-@model DemoCoreViewModel
-
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h2>Departments</h2>
-@foreach (var dept in Model.Departments)
-{
-    <div>@dept.Id</div>
-    <div>@dept.DepName</div>
-
-}
-
-<h2>Employees</h2>
-@foreach (var emp in Model.Employees)
-{
-    <div>@emp.IdEmp</div>
-    <div>@emp.EmpName (Department ID: @emp.DepId)</div>
-
-}
-
+<h1>Admin</h1>
