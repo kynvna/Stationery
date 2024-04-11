@@ -6,6 +6,7 @@ namespace StationeryAPI.ShoppingModels;
 public partial class TblProduct
 {
     public string ProId { get; set; } = null!;
+    public string dealerId { get; set; }
 
     public string ProName { get; set; } = null!;
 

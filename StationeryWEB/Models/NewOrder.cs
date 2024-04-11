@@ -3,6 +3,7 @@
     public class NewOrder
     {
         public string CustomerId { get; set; } = null!;
+        public string ProductId { get; set; } = null!;
 
         public decimal TotalPrice { get; set; }
 

@@ -19,6 +19,10 @@
         <input type="text" id="customerId" name="customerId" required>
     </div>
     <div>
+        <label for="productId">Product ID:</label>
+        <input type="text" id="productId" name="productId" required>
+    </div>
+    <div>
         <label for="totalPrice">Total Price:</label>
         <input type="number" id="totalPrice" name="totalPrice" required step="0.01">
     </div>
@@ -26,6 +30,24 @@
         <label for="orderStatus">Order Status:</label>
         <input type="text" id="orderStatus" name="orderStatus" required>
     </div>
+
+    <div>
+        <label for="DeliveryType">Delivery Type:</label>
+        <input type="text" id="deliveryType" name="deliveryType" required>
+    </div>
+    <div>
+        <label for="DeliveryFee">Delivery Fee:</label>
+        <input type="number" id="deliveryFee" name="deliveryFee" required step="0.01">
+    </div>
+    <div>
+        <label for="PaymentMethod">Payment Method:</label>
+        <input type="text" id="paymentMethod" name="paymentMethod" required>
+    </div>
+    <div>
+        <label for="PaymentStatus">Payment Status:</label>
+        <input type="text" id="paymentStatus" name="paymentStatus" required>
+    </div>
+
     <button type="submit">Submit Order</button>
 </form>
 
@@ -39,8 +61,13 @@
             // Gather form data into an order object
             var order = {
                 customerId: document.getElementById('customerId').value,
+                productId: document.getElementById('productId').value,
                 totalPrice: parseFloat(document.getElementById('totalPrice').value),
                 orderStatus: document.getElementById('orderStatus').value,
+                deliveryType: document.getElementById('deliveryType').value,
+                deliveryFee: parseFloat(document.getElementById('deliveryFee').value),
+                paymentMethod: document.getElementById('paymentMethod').value,
+                paymentStatus: document.getElementById('paymentStatus').value,
                 // Set other properties as needed
             };
 
@@ -63,14 +90,19 @@
 
                     // Here is where you place the code to update the 'orderResult' div
                     document.getElementById('orderResult').innerHTML = `
-                                        <h3>Order Created Successfully!</h3>
-                                        <div><strong>Order ID:</strong> ${createdOrder.orderId}</div>
-                                        <div><strong>Customer ID:</strong> ${createdOrder.customerId}</div>
-                                        <div><strong>Total Price:</strong> ${createdOrder.totalPrice.toFixed(2)}</div>
-                                        <div><strong>Order Status:</strong> ${createdOrder.orderStatus}</div>
-                                        <div><strong>Order Date:</strong> ${new Date(createdOrder.orderDate).toLocaleString()}</div>
-                                        <!-- Display other properties as needed -->
-                                    `;
+                                                        <h3>Order Created Successfully!</h3>
+                                                        <div><strong>Order ID:</strong> ${createdOrder.orderId}</div>
+                                                        <div><strong>Product ID:</strong> ${createdOrder.productId}</div>
+                                                        <div><strong>Customer ID:</strong> ${createdOrder.customerId}</div>
+                                                        <div><strong>Total Price:</strong> ${createdOrder.totalPrice.toFixed(2)}</div>
+                                                        <div><strong>Order Status:</strong> ${createdOrder.orderStatus}</div>
+                                                        <div><strong>Order Date:</strong> ${new Date(createdOrder.orderDate).toLocaleString()}</div>
+                                                                <div><strong>Delivery Type:</strong> ${createdOrder.deliveryType}</div>
+                                                                <div><strong>Delivery Fee:</strong> ${createdOrder.deliveryFee}</div>
+                                                                <div><strong>Payment Method:</strong> ${createdOrder.paymentMethod}</div>
+                                                                <div><strong>Payment Status:</strong> ${createdOrder.paymentStatus}</div>
+                                                        <!-- Display other properties as needed -->
+                                                    `;
                 }
             } catch (error) {
                 console.error('Error:', error);

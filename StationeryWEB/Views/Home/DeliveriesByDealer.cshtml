@@ -1,0 +1,89 @@
+﻿@model DeliveryViewModel
+
+@{
+    ViewData["Title"] = "Delivery";
+}
+
+<h2>Deliveries</h2>
+
+<!-- Simplified Filter Form -->
+<form method="post" id="DeliveriesByDealerId">
+    <label for="dealerId">Dealer ID:</label>
+    
+    <input type="text" name="dealerId" id="dealerId" />
+    <button type="submit">Filter</button>
+</form>
+
+@foreach (var item in Model.Deliveries)
+{
+    <div>@item.DeliveryId</div>
+    <div>@item.OrderId</div>
+    <div>@item.DeliveryDate</div>
+    <div>@item.DeliveryStatus</div>
+    <div>@item.DeliveryFee</div>
+    <div>@item.CarrierName</div>
+}
+
+<!-- Pagination and script remain unchanged -->
+
+<div>
+    Page @Model.CurrentPage of @Model.TotalPages
+
+    @if (Model.CurrentPage > 1)
+    {
+        <button onclick="goToPage(@(Model.CurrentPage - 1))">Previous</button>
+    }
+
+    @if (Model.CurrentPage < Model.TotalPages)
+    {
+        <button type="button" onclick="goToPage(@(Model.CurrentPage + 1))">Next</button>
+    }
+</div>
+
+<script>
+    function goToPage(page) {
+        const url = new URL(window.location);
+        url.searchParams.set('page', page);
+        const pageSize = document.querySelector('select[name="pageSize"]').value;
+        const dealerId = document.getElementById('dealerId').value;
+        url.searchParams.set('pageSize', pageSize);
+        if (dealerId) {
+            url.searchParams.set('dealerId', dealerId);
+        }
+        window.location.href = url.href;
+    }
+</script>
+
+<div>
+    @for (int i = 1; i <= Model.TotalPages; i++)
+    {
+        <button type="button" onclick="goToPage(@i)">@i</button>
+    }
+</div>
+
+<div>
+    <form method="get">
+        <label for="pageSize">Products per page:</label>
+        <select name="pageSize" onchange="this.form.submit()">
+            <option selected="selected" value="@Model.PageSize">@Model.PageSize</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+        </select>
+      
+        <input type="hidden" name="dealerId" id="hiddenDealerId" />
+    </form>
+</div>
+
+<script>
+    // Set the hidden field's value based on the URL parameter
+    // This script should be placed at the end of the body
+    document.addEventListener("DOMContentLoaded", function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const dealerId = urlParams.get('dealerId');
+        if (dealerId) {
+            document.getElementById('dealerId').value = dealerId; // For the text input
+            document.getElementById('hiddenDealerId').value = dealerId; // For the hidden input in pagination
+        }
+    });
+</script>
