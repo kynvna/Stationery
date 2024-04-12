@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\AdminUserView.cshtml",
               "ToolTip": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\Views\\Home\\AdminUserView.cshtml",
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\AdminUserView.cshtml",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAABwAAABKAAAA",
+              "ViewState": "AQIAAMQBAAAAAAAAAAAawNgBAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-10T13:44:39.859Z",
               "EditorCaption": ""
@@ -75,7 +75,8 @@
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\AdminDealerView.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABwAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-10T13:44:20.682Z"
+              "WhenOpened": "2024-04-10T13:44:20.682Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -87,7 +88,8 @@
               "RelativeToolTip": "StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
               "ViewState": "AQIAAEgAAAAAAAAAAAAgwCgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T13:42:54.019Z"
+              "WhenOpened": "2024-04-10T13:42:54.019Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -99,7 +101,8 @@
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\Admin.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAswBwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-10T13:34:47.101Z"
+              "WhenOpened": "2024-04-10T13:34:47.101Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -111,7 +114,8 @@
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\Dealer.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-10T13:34:46.531Z"
+              "WhenOpened": "2024-04-10T13:34:46.531Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -123,7 +127,8 @@
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAEAAAAAAAAAAAAAABIAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-10T13:15:15.318Z"
+              "WhenOpened": "2024-04-10T13:15:15.318Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -135,7 +140,8 @@
               "RelativeToolTip": "StationeryWEB\\Controllers\\HomeController.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAgwDIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-10T12:43:10.643Z"
+              "WhenOpened": "2024-04-10T12:43:10.643Z",
+              "EditorCaption": ""
             }
           ]
         }
