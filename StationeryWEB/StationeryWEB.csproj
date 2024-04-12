@@ -24,7 +24,6 @@
     <Folder Include="Areas\Dealer\Controllers\" />
     <Folder Include="Areas\Dealer\Models\" />
     <Folder Include="Areas\Dealer\Views\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>

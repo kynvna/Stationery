@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Text.Json;
+using Microsoft.Extensions.Logging;
+using System.Net;
 using Newtonsoft.Json;
-using Microsoft.Extensions.Logging; // Ensure this using directive is included for ILogger
+using Newtonsoft.Json.Linq; // Ensure this using directive is included for ILogger
 
 namespace StationeryWEB.Controllers
 {
@@ -19,12 +22,35 @@ namespace StationeryWEB.Controllers
 
         public IActionResult Index()
         {
+            string path = "https://dummyjson.com/products";
+            object sir = GetItem(path);
+            JObject jObject = JObject.Parse(sir.ToString());
+            ViewBag.data = jObject["products"];
             return View();
         }
+        public object GetItem(string path)
+        {
+            using (WebClient webClient = new WebClient())
+            {
+                return JsonConvert.DeserializeObject<object>(
+                    webClient.DownloadString(path)
+                );
+            }
+        }
+        //--- ADMIN --------------------------------
         public IActionResult ToAdmin()
         {
             return View("Admin");
         }
+        public IActionResult ToAdminDealer()
+        {
+            return View("AdminDealerView");
+        }
+        public IActionResult ToAdminUser()
+        {
+            return View("AdminUserView");
+        }
+
         public IActionResult ToDealer()
         {
             return View("Dealer");
