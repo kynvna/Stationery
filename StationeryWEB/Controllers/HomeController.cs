@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using StationeryWEB.Models;
 using System.Diagnostics;
+using System.Text.Json;
+using Microsoft.Extensions.Logging;
+using System.Net;
 using Newtonsoft.Json;
-using Microsoft.Extensions.Logging; // Ensure this using directive is included for ILogger
+using Newtonsoft.Json.Linq; // Ensure this using directive is included for ILogger
 
 namespace StationeryWEB.Controllers
 {
@@ -18,43 +20,66 @@ namespace StationeryWEB.Controllers
             _clientFactory = clientFactory;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            //var client = _clientFactory.CreateClient();
-            //var response = await client.GetAsync("https://localhost:7106/weatherforecast");
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    var jsonString = await response.Content.ReadAsStringAsync();
-            //    var weatherData = JsonConvert.DeserializeObject<IEnumerable<WeatherForecast>>(jsonString);
-            //    // Now you have your weather data and you can pass it to the view
-            //    return View(weatherData);
-            //}
-           
-                var client = _clientFactory.CreateClient();
-                var response = await client.GetAsync("https://localhost:7106/api/DemoCore");
-                if (response.IsSuccessStatusCode)
-                {
-                    var jsonString = await response.Content.ReadAsStringAsync();
-               
-
-                var demoCoreData = JsonConvert.DeserializeObject<DemoCoreViewModel>(jsonString);
-                    return View(demoCoreData);
-                    
-                }
-                
-
-            return View("Error");
-        }
-
-        public IActionResult Privacy()
-        {
+            string path = "https://dummyjson.com/products";
+            object sir = GetItem(path);
+            JObject jObject = JObject.Parse(sir.ToString());
+            ViewBag.data = jObject["products"];
             return View();
         }
+        public object GetItem(string path)
+        {
+            using (WebClient webClient = new WebClient())
+            {
+                return JsonConvert.DeserializeObject<object>(
+                    webClient.DownloadString(path)
+                );
+            }
+        }
+        //--- ADMIN --------------------------------
+        public IActionResult ToAdmin()
+        {
+            return View("Admin");
+        }
+        public IActionResult ToAdminDealer()
+        {
+            return View("AdminDealerView");
+        }
+        public IActionResult ToAdminUser()
+        {
+            return View("AdminUserView");
+        }
 
+        public IActionResult ToDealer()
+        {
+            return View("Dealer");
+        }
+        public IActionResult ToUser()
+        {
+            return View("User");
+        }
+        public IActionResult ToDetailPage()
+        {
+            return View("ItemDetails");
+        }
+        // LOGIN FORMS
+        public IActionResult ToAdminLogin()
+        {
+            return View("LoginAdmin");
+        }
+        public IActionResult ToUserLogin()
+        {
+            return View("LoginUser");
+        }
+        public IActionResult ToDealerLogin()
+        {
+            return View("LoginDealer");
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
     }
 }

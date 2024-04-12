@@ -1,10 +1,18 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "XLIquizgbsV2NzNXjo/rNXEXlG0uL1drEK06QsqbQSwIO++p47Hoye/RaniQ4w81Mu8FrsoG5R6xBo+L7CJYvQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\Stationery\\StationeryWEB\\StationeryWEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+=======
+  "dgSpecHash": "UQK/LD3h7Dl+x9eR8HQnilA5MZ/RcG0LJHXcKX3sGeUQHCjKUuCBHCU8LAIhoGNtLNif3DlT+j2LCf2D5yFTeg==",
+  "success": true,
+  "projectFilePath": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\StationeryWEB.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HAI DANG\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+>>>>>>> origin/dangvnh
   ],
   "logs": []
 }

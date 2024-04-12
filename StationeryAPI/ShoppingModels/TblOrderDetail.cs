@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace StationeryAPI.ShoppingModels;
 
 public partial class TblOrderDetail
 {
-    public string DetailId { get; set; } = null!;
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int DetailId { get; set; } 
 
     public string OrderId { get; set; } = null!;
 
@@ -17,7 +21,7 @@ public partial class TblOrderDetail
 
     public decimal? TotalAmount { get; set; }
 
-    public virtual TblOrder Order { get; set; } = null!;
+    public virtual TblOrder Order { get; set; }
 
-    public virtual TblProduct Product { get; set; } = null!;
+    public virtual TblProduct Product { get; set; }
 }

@@ -15,6 +15,7 @@ E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.csproj.CoreCom
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.MvcApplicationPartsAssemblyInfo.cache
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.RazorAssemblyInfo.cache
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.RazorAssemblyInfo.cs
+E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.sourcelink.json
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\staticwebassets.build.json
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\staticwebassets.development.json
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\staticwebassets\msbuild.StationeryWEB.Microsoft.AspNetCore.StaticWebAssets.props
@@ -31,6 +32,7 @@ E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\refint\StationeryWEB.dll
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.pdb
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.genruntimeconfig.cache
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\ref\StationeryWEB.dll
+<<<<<<< HEAD
 C:\Users\Admin\Source\Repos\Stationery\StationeryWEB\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Admin\Source\Repos\Stationery\StationeryWEB\bin\Debug\net8.0\appsettings.json
 C:\Users\Admin\Source\Repos\Stationery\StationeryWEB\bin\Debug\net8.0\StationeryWEB.staticwebassets.runtime.json
@@ -65,3 +67,39 @@ C:\Users\Admin\Source\Repos\Stationery\StationeryWEB\obj\Debug\net8.0\refint\Sta
 C:\Users\Admin\Source\Repos\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.pdb
 C:\Users\Admin\Source\Repos\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.genruntimeconfig.cache
 C:\Users\Admin\Source\Repos\Stationery\StationeryWEB\obj\Debug\net8.0\ref\StationeryWEB.dll
+=======
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\bin\Debug\net8.0\appsettings.Development.json
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\bin\Debug\net8.0\appsettings.json
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\bin\Debug\net8.0\StationeryWEB.staticwebassets.runtime.json
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\bin\Debug\net8.0\StationeryWEB.exe
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\bin\Debug\net8.0\StationeryWEB.deps.json
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\bin\Debug\net8.0\StationeryWEB.runtimeconfig.json
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\bin\Debug\net8.0\StationeryWEB.dll
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\bin\Debug\net8.0\StationeryWEB.pdb
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.csproj.AssemblyReference.cache
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.GeneratedMSBuildEditorConfig.editorconfig
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.AssemblyInfoInputs.cache
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.AssemblyInfo.cs
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.csproj.CoreCompileInputs.cache
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.MvcApplicationPartsAssemblyInfo.cache
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.RazorAssemblyInfo.cache
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.RazorAssemblyInfo.cs
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.sourcelink.json
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\staticwebassets.build.json
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\staticwebassets.development.json
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\staticwebassets\msbuild.StationeryWEB.Microsoft.AspNetCore.StaticWebAssets.props
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\staticwebassets\msbuild.build.StationeryWEB.props
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StationeryWEB.props
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StationeryWEB.props
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\staticwebassets.pack.json
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\scopedcss\bundle\StationeryWEB.styles.css
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\scopedcss\projectbundle\StationeryWEB.bundle.scp.css
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\Statione.72576C29.Up2Date
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.dll
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\refint\StationeryWEB.dll
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.pdb
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.genruntimeconfig.cache
+C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\ref\StationeryWEB.dll
+>>>>>>> origin/dangvnh
