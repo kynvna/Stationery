@@ -19,4 +19,17 @@
     <Folder Include="Areas\Dealer\Views\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Home\CreateOrderDetail.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Home\CreateOrderDetail.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Home\Deliveries.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Home\Deliveries.cshtml" />
+  </ItemGroup>
+
 </Project>
