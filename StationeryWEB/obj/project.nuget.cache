@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "V6pPJuTwx0PR/Rbi27frsSbG2EWTxCq0PRaR9SMOUtZ8y9gkGh+R98VBXqaK1R1jqZ55UYyRckmCRSuwbitIsQ==",
+  "dgSpecHash": "XLIquizgbsV2NzNXjo/rNXEXlG0uL1drEK06QsqbQSwIO++p47Hoye/RaniQ4w81Mu8FrsoG5R6xBo+L7CJYvQ==",
   "success": true,
-  "projectFilePath": "E:\\Source\\Stationery\\StationeryWEB\\StationeryWEB.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Source\\Repos\\Stationery\\StationeryWEB\\StationeryWEB.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MININT-QHS5KT4-local\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }
