@@ -204,9 +204,7 @@ public partial class ShoppingWebContext : DbContext
             entity.Property(e => e.OrderId)
                 .HasMaxLength(32)
                 .HasColumnName("orderID");
-            entity.Property(e => e.ReviewId)
-                .HasMaxLength(32)
-                .HasColumnName("reviewID");
+           
 
             entity.HasOne(d => d.Order).WithMany(p => p.TblDeliveries)
                 .HasForeignKey(d => d.OrderId)
@@ -226,6 +224,14 @@ public partial class ShoppingWebContext : DbContext
             entity.Property(e => e.CustomerId)
                 .HasMaxLength(32)
                 .HasColumnName("customerID");
+            //entity.Property(e => e.productId)
+            //    .HasMaxLength(32)
+            //    .HasColumnName("productId");
+            entity.HasOne(d => d.Product) // Navigation property in TblOrder
+        .WithMany(p => p.Orders) // Navigation property in TblProduct
+        .HasForeignKey(d => d.productId) // Foreign key property in TblOrder
+        .OnDelete(DeleteBehavior.ClientSetNull) // Optional: Configure delete behavior
+        .HasConstraintName("FK_Order_Product");
             entity.Property(e => e.OrderDate)
                 .HasColumnType("datetime")
                 .HasColumnName("order_date");
@@ -286,6 +292,9 @@ public partial class ShoppingWebContext : DbContext
             entity.Property(e => e.ProId)
                 .HasMaxLength(32)
                 .HasColumnName("proID");
+            entity.Property(e => e.dealerId)
+               .HasMaxLength(32)
+               .HasColumnName("dealerId");
             entity.Property(e => e.Description)
                 .HasMaxLength(500)
                 .HasColumnName("description");

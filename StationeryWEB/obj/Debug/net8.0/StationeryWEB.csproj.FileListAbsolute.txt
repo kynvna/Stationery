@@ -15,6 +15,7 @@ E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.csproj.CoreCom
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.MvcApplicationPartsAssemblyInfo.cache
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.RazorAssemblyInfo.cache
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.RazorAssemblyInfo.cs
+E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\StationeryWEB.sourcelink.json
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\staticwebassets.build.json
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\staticwebassets.development.json
 E:\Source\Stationery\StationeryWEB\obj\Debug\net8.0\staticwebassets\msbuild.StationeryWEB.Microsoft.AspNetCore.StaticWebAssets.props

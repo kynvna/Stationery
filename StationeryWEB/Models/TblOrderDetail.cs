@@ -9,7 +9,7 @@ public partial class TblOrderDetail
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public int DetailId { get; set; } 
+    public int DetailId { get; set; }
 
     public string OrderId { get; set; } = null!;
 
@@ -21,7 +21,7 @@ public partial class TblOrderDetail
 
     public decimal? TotalAmount { get; set; }
 
-    public virtual TblOrder Order { get; set; }
+    public virtual TblOrder Order { get; set; } = null!;
 
-    public virtual TblProduct Product { get; set; }
+    public virtual TblProduct Product { get; set; } = null!;
 }

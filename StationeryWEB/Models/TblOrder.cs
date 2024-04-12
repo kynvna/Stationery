@@ -22,9 +22,10 @@ public partial class TblOrder
     public decimal DeliveryFee { get; set; }
     public string PaymentMethod { get; set; } = null!;
     public string PaymentStatus { get; set; } = null!;
+
     public virtual TblProduct Product { get; set; }
 
-    public virtual TblCustomer Customer { get; set; } = null!;
+    public virtual TblCustomer Customer { get; set; }
 
     public virtual ICollection<TblDelivery> TblDeliveries { get; set; } = new List<TblDelivery>();
 

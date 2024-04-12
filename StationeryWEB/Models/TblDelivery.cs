@@ -7,8 +7,6 @@ public partial class TblDelivery
 {
     public string DeliveryId { get; set; } = null!;
 
-  
-
     public string OrderId { get; set; } = null!;
 
     public DateTime? DeliveryDate { get; set; }
