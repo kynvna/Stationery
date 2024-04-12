@@ -13,5 +13,5 @@ public partial class TblCategory
 
     public bool Active { get; set; }
 
-    public virtual ICollection<TblProduct> Products { get; set; } = new List<TblProduct>();
+    public virtual ICollection<TblProduct> TblProducts { get; set; } = new List<TblProduct>();
 }

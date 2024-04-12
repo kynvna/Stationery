@@ -6,7 +6,6 @@ namespace StationeryAPI.ShoppingModels;
 public partial class TblProduct
 {
     public string ProId { get; set; } = null!;
-    public string dealerId { get; set; } 
 
     public string ProName { get; set; } = null!;
 
@@ -24,12 +23,24 @@ public partial class TblProduct
 
     public DateTime? TimeUpdated { get; set; }
 
-    public virtual ICollection<TblCartItem> TblCartItems { get; set; } = new List<TblCartItem>();
-    public virtual ICollection<TblOrder> Orders { get; set; }
+    public string DealerId { get; set; } = null!;
 
-    public virtual ICollection<TblOrderDetail> TblOrderDetails { get; set; } = new List<TblOrderDetail>();
+    public string? CatId { get; set; }
+
+
+
+    public virtual TblCategory? Cat { get; set; }
+
+    public virtual ICollection<TblCartItem> TblCartItems { get; set; } = new List<TblCartItem>();
+
+    public virtual ICollection<TblOrder> TblOrders {
+        get
+        {
+            ShoppingWebContext db = new ShoppingWebContext();
+            var ls = db.TblOrders.Where(d => d.ProductId == ProId).ToList();
+            return ls;
+        }
+    }
 
     public virtual TblStock? TblStock { get; set; }
-
-    public virtual ICollection<TblCategory> Cats { get; set; } = new List<TblCategory>();
 }

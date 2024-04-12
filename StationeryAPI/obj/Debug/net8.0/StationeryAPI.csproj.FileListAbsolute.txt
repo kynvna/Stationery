@@ -135,3 +135,14 @@ E:\Source\Stationery\StationeryAPI\obj\Debug\net8.0\refint\StationeryAPI.dll
 E:\Source\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.pdb
 E:\Source\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.genruntimeconfig.cache
 E:\Source\Stationery\StationeryAPI\obj\Debug\net8.0\ref\StationeryAPI.dll
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.csproj.AssemblyReference.cache
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.AssemblyInfoInputs.cache
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.AssemblyInfo.cs
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.csproj.CoreCompileInputs.cache
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.sourcelink.json
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.dll
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\refint\StationeryAPI.dll
+C:\Users\MSI BRAVO 15\Source\Repos\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.pdb

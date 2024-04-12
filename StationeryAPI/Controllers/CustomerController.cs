@@ -72,7 +72,7 @@ namespace StationeryAPI.Controllers
                 //newTblOrder.OrderId = Guid.NewGuid().ToString("N"); // Produces a 32-character hexadecimal string.
                 newTblOrder.OrderId = GenerateOrderNumberUsingTicks();                                                
                 newTblOrder.OrderDate = DateTime.UtcNow; // Or use the date passed in if it should be set client-side
-                newTblOrder.productId = newOrder.productId;
+                newTblOrder.ProductId = newOrder.productId;
                 newTblOrder.OrderStatus=newOrder.OrderStatus;
                 newTblOrder.CustomerId=newOrder.CustomerId;
                 newTblOrder.TotalPrice= newOrder.TotalPrice;
@@ -134,7 +134,7 @@ namespace StationeryAPI.Controllers
                 {
 
                     order.OrderDate = updateOrder.OrderDate; // Or use the date passed in if it should be set client-side
-                    order.productId = updateOrder.productId;
+                    order.ProductId = updateOrder.productId;
                     order.OrderStatus = updateOrder.OrderStatus;
                     order.CustomerId = updateOrder.CustomerId;
                     order.TotalPrice = updateOrder.TotalPrice;
@@ -174,7 +174,7 @@ namespace StationeryAPI.Controllers
             //                .ToList();
             var orders = _context.TblOrders
                      .Include(order => order.Product)
-                     .Where(order => order.Product.dealerId == dealerId)
+                     .Where(order => order.Product.DealerId == dealerId)
                      .ToList();
 
             int totalOrders = orders.Count();
@@ -310,10 +310,10 @@ namespace StationeryAPI.Controllers
             // Calculate the total number of products
             var orderIds = _context.TblOrders
                             .Join(_context.TblProducts, // Join Orders with Products
-                                  order => order.productId,
+                                  order => order.ProductId,
                                   product => product.ProId,
                                   (order, product) => new { order, product })
-                            .Where(op => op.product.dealerId == dealerId)
+                            .Where(op => op.product.DealerId == dealerId)
                             .Select(op => op.order.OrderId)
                             .Distinct()
                             .ToList();
@@ -382,7 +382,7 @@ namespace StationeryAPI.Controllers
 
                      // Or use the date passed in if it should be set client-side
                     delivery.DeliveryDate  = updateDelivery.DeliveryDate;
-                    delivery.DeliveryFee   = updateDelivery.DeliveryFee;
+                    delivery.DeliveryFee   = updateDelivery.DeliveryFee ?? 0;
                     delivery.DeliveryStatus = updateDelivery.DeliveryStatus;
                     delivery.CarrierName= updateDelivery.CarrierName;
                     delivery.OrderId= updateDelivery.OrderId;
@@ -433,7 +433,7 @@ namespace StationeryAPI.Controllers
             var updateOrder = new UpdateOrder
             {
                 OrderId = tblOrder.OrderId,
-                productId = tblOrder.productId,
+                productId = tblOrder.ProductId,
                 CustomerId = tblOrder.CustomerId,
                 OrderDate = tblOrder.OrderDate,
                 TotalPrice = tblOrder.TotalPrice,
