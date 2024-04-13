@@ -70,8 +70,9 @@ namespace StationeryAPI.Controllers
                var newTblOrder= new TblOrder();
                 
                 //newTblOrder.OrderId = Guid.NewGuid().ToString("N"); // Produces a 32-character hexadecimal string.
-                newTblOrder.OrderId = GenerateOrderNumberUsingTicks();                                                
-                newTblOrder.OrderDate = DateTime.UtcNow; // Or use the date passed in if it should be set client-side
+                newTblOrder.OrderId = GenerateOrderNumberUsingTicks();
+                newTblOrder.OrderDate = DateTime.UtcNow.AddHours(7);
+                // Or use the date passed in if it should be set client-side
                 newTblOrder.productId = newOrder.productId;
                 newTblOrder.OrderStatus=newOrder.OrderStatus;
                 newTblOrder.CustomerId=newOrder.CustomerId;
@@ -105,8 +106,7 @@ namespace StationeryAPI.Controllers
             var order = await _context.TblOrders
                                       .Include(o => o.TblDeliveries)
                                       .Include(o => o.TblOrderDetails)
-                                      .Include(o => o.TblReviews)
-                                      .FirstOrDefaultAsync(o => o.OrderId == id);
+                                       .FirstOrDefaultAsync(o => o.OrderId == id);
 
             if (order == null)
             {
@@ -164,14 +164,8 @@ namespace StationeryAPI.Controllers
         [HttpGet("GetOrderByDealer")]
         public ActionResult GetOrderByDealer([FromQuery] string dealerId, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
         {
-            // Calculate the total number of products
-            //var orders = _context.TblOrders
-            //                .Join(_context.TblProducts, // Join Orders with Products
-            //                      order => order.productId,
-            //                      product => product.ProId,
-            //                      (order, product) => new { order, product })
-            //                .Where(op => op.product.dealerId == dealerId)
-            //                .ToList();
+           
+            
             var orders = _context.TblOrders
                      .Include(order => order.Product)
                      .Where(order => order.Product.dealerId == dealerId)
@@ -263,7 +257,7 @@ namespace StationeryAPI.Controllers
             var order = await _context.TblOrders
                                       .Include(o => o.TblDeliveries)
                                       .Include(o => o.TblOrderDetails)
-                                      .Include(o => o.TblReviews)
+                                      
                                       .FirstOrDefaultAsync(o => o.OrderId == id);
 
             if (order == null)

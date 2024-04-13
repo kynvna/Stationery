@@ -38,8 +38,29 @@ public partial class ShoppingWebContext : DbContext
     public virtual DbSet<TblStock> TblStocks { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=LAP14404\\SQLEXPRESS;Initial Catalog=ShoppingWeb;Persist Security Info=True;User ID=sa;Password=123;Encrypt=True;Trust Server Certificate=True");
+
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+    //        => optionsBuilder.UseSqlServer("Data Source=LAP14404\\SQLEXPRESS;Initial Catalog=ShoppingWeb;Persist Security Info=True;User ID=sa;Password=123;Encrypt=True;Trust Server Certificate=True");
+    {
+        
+
+        // Your existing database configuration
+        optionsBuilder.UseSqlServer("Data Source=LAP14404\\SQLEXPRESS;Initial Catalog=ShoppingWeb;Persist Security Info=True;User ID=sa;Password=123;Encrypt=True;Trust Server Certificate=True");
+
+        // Add the logging configuration
+        var loggerFactory = LoggerFactory.Create(builder =>
+        {
+            builder
+                .AddFilter((category, level) =>
+                    category == DbLoggerCategory.Database.Command.Name
+                    && level == LogLevel.Information)
+                .AddConsole();
+        });
+
+        optionsBuilder.UseLoggerFactory(loggerFactory)  // Use the logger factory
+                      .EnableSensitiveDataLogging();    // Enable sensitive data in the log
+    }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -214,8 +235,11 @@ public partial class ShoppingWebContext : DbContext
 
         modelBuilder.Entity<TblOrder>(entity =>
         {
-            entity.HasKey(e => e.OrderId).HasName("PK_Order");
+            //entity.HasKey(e => e.OrderId).HasName("PK_Order");
 
+            //entity.ToTable("tblOrder");
+
+            entity.HasKey(e => e.OrderId).HasName("PK_Order");
             entity.ToTable("tblOrder");
 
             entity.Property(e => e.OrderId)
@@ -224,14 +248,31 @@ public partial class ShoppingWebContext : DbContext
             entity.Property(e => e.CustomerId)
                 .HasMaxLength(32)
                 .HasColumnName("customerID");
-            //entity.Property(e => e.productId)
-            //    .HasMaxLength(32)
-            //    .HasColumnName("productId");
-            entity.HasOne(d => d.Product) // Navigation property in TblOrder
-        .WithMany(p => p.Orders) // Navigation property in TblProduct
-        .HasForeignKey(d => d.productId) // Foreign key property in TblOrder
-        .OnDelete(DeleteBehavior.ClientSetNull) // Optional: Configure delete behavior
-        .HasConstraintName("FK_Order_Product");
+            entity.Property(e => e.productId) // Now clearly named
+                .HasMaxLength(32)
+                .HasColumnName("productId");
+            entity.HasOne(d => d.Product)
+                .WithMany(p => p.Orders)
+                .HasForeignKey(d => d.productId) // Foreign key property in TblOrder
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Order_Product");
+
+            //--------------------------
+
+        //    entity.Property(e => e.OrderId)
+        //        .HasMaxLength(32)
+        //        .HasColumnName("orderID");
+        //    entity.Property(e => e.CustomerId)
+        //        .HasMaxLength(32)
+        //        .HasColumnName("customerID");
+        //    entity.Property(e => e.productId)
+        //        .HasMaxLength(32)
+        //        .HasColumnName("productId");
+        //    entity.HasOne(d => d.Product) // Navigation property in TblOrder
+        //.WithMany(p => p.Orders) // Navigation property in TblProduct
+        //.HasForeignKey(d => d.productId) // Foreign key property in TblOrder
+        //.OnDelete(DeleteBehavior.ClientSetNull) // Optional: Configure delete behavior
+        //.HasConstraintName("FK_Order_Product");
             entity.Property(e => e.OrderDate)
                 .HasColumnType("datetime")
                 .HasColumnName("order_date");
@@ -401,4 +442,7 @@ public partial class ShoppingWebContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+
+
 }

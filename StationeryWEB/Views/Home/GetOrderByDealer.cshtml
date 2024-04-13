@@ -1,25 +1,38 @@
-﻿@model OrderViewModel
+﻿@model StationeryWEB.Models.OrderViewModel
 
 @{
     ViewData["Title"] = "Get Order by Dealer";
 }
 
-<h2>Oders</h2>
+<h2>Orders</h2>
 
 <!-- Simplified Filter Form -->
 <form method="post" id="GetOrderByDealer">
     <label for="dealerId">Dealer ID:</label>
-
     <input type="text" name="dealerId" id="dealerId" />
     <button type="submit">Filter</button>
 </form>
 
-@foreach (var item in Model.Orders)
+@if (Model.Orders != null)
 {
-    <div>@item.OrderId</div>
-    <div>@item.CustomerId</div>
-    <div>@item.productId</div>
+    foreach (var item in Model.Orders)
+    {
+        <div>
+            <h3>Order ID: @item.OrderId</h3>
+            <p>Customer ID: @item.CustomerId</p>
+            <p>Product ID: @item.productId</p>
+            <p>Order Date: @item.OrderDate.ToString("yyyy-MM-dd HH:mm:ss")</p>
+            <p>Total Price: @item.TotalPrice</p>
+            <p>Order Status: @item.OrderStatus</p>
+            <!-- Add additional fields as needed -->
+        </div>
+    }
 }
+else
+{
+    <p>No orders found or data is incomplete.</p>
+}
+
 
 
 <!-- Pagination and script remain unchanged -->

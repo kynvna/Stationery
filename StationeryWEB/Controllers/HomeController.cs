@@ -199,11 +199,13 @@ namespace StationeryWEB.Controllers
         [HttpGet]
         public IActionResult GetOrderByDealer()
         {
-            // Initialize your model with an empty list of TblOrder for Orders
+            // Initialize your model with an empty list of TblOrder within OrderValues
             var model = new OrderViewModel
             {
-                Orders = new List<StationeryAPI.ShoppingModels.TblOrder>(), // Directly initialize Orders as a List<TblOrder>
-                TotalOrders = 0, // Assuming default initialization values
+
+                Orders = new List<StationeryAPI.ShoppingModels.TblOrder>(), // Initialize the nested list
+                
+                TotalOrders = 0, // Default initialization values
                 TotalPages = 0,
                 CurrentPage = 1,
                 PageSize = 10
@@ -211,6 +213,7 @@ namespace StationeryWEB.Controllers
 
             return View(model);
         }
+
 
 
 
@@ -231,9 +234,16 @@ namespace StationeryWEB.Controllers
             if (response.IsSuccessStatusCode)
             {
                 var jsonString = await response.Content.ReadAsStringAsync();
-                var orders = JsonConvert.DeserializeObject<StationeryWEB.Models.OrderViewModel>(jsonString);
-
-                return View(orders);
+                try
+                {
+                    var orders = JsonConvert.DeserializeObject<OrderViewModel>(jsonString);
+                    return View(orders);
+                }
+                catch (JsonSerializationException ex)
+                {
+                    // Handle the exception, possibly log it, and return an error view
+                    return View("Error");
+                }
             }
 
             return View("Error");

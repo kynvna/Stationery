@@ -19,6 +19,8 @@ public partial class TblCustomer
 
     public bool Active { get; set; }
 
+    public virtual TblOrder Orders { get; set; }
+
     public virtual ICollection<TblCart> TblCarts { get; set; } = new List<TblCart>();
 
     public virtual ICollection<TblOrder> TblOrders { get; set; } = new List<TblOrder>();
