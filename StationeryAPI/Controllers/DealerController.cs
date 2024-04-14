@@ -49,8 +49,8 @@ namespace StationeryAPI.Controllers
             return Ok(response);
         }
 
-        [HttpGet("getproduct")]
-        public async Task<IActionResult> GetAllProduct([FromQuery]  int page = 1, [FromQuery] int pageSize = 10)
+        [HttpGet("getproductbydealer")]
+        public async Task<IActionResult> GetProductByDealer(string id ,[FromQuery]  int page = 1, [FromQuery] int pageSize = 10)
         {
             try
             {
@@ -61,7 +61,7 @@ namespace StationeryAPI.Controllers
                 var totalPages = (int)Math.Ceiling(totalProducts / (double)pageSize);
 
                 
-                var products = db.TblProducts
+                var products = db.TblProducts.Where(d => d.DealerId == id)
                                        .Skip((page - 1) * pageSize) // Skip the products from the previous pages
                                        .Take(pageSize)              // Take the next 'pageSize' number of products
                                        .ToList();
