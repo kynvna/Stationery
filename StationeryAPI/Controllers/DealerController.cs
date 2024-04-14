@@ -43,7 +43,8 @@ namespace StationeryAPI.Controllers
             {
                 AccessToken = accessToken,
                 RefreshToken = refreshToken,
-                Role = user.Role
+                Role = user.Role,
+                id = user.UserId
             };
             return Ok(response);
         }
