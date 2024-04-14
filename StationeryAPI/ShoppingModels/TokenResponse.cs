@@ -6,5 +6,7 @@
         public string RefreshToken { get; set; }
 
         public int Role {  get; set; }
+
+        public string id { get; set; }
     }
 }
