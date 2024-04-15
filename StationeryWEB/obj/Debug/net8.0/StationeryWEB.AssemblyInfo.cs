@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StationeryWEB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c626f39c860b4f56ba952072e6410ae0d887e4f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4e34e20c2d86453d474ff0584cae6a4440fbc2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("StationeryWEB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StationeryWEB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

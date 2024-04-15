@@ -3,23 +3,86 @@
   "WorkspaceRootPath": "C:\\SEM3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\sem3\\stationeryapi\\shoppingmodels\\shoppingwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\shoppingmodels\\shoppingwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\sem3\\stationeryapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\stationeryweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\stationeryweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\sem3\\stationeryapi\\stationeryapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\stationeryapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\sem3\\stationeryapi\\shoppingmodels\\tblorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\shoppingmodels\\tblorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\updatedelivery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\updatedelivery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\getorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\getorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HAI DANG\\AppData\\Local\\Temp\\TFSTemp\\vctmp11156_53457.UpdateDelivery.00000000.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\deliveries.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\deliveries.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\models\\updateorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\models\\updateorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\createorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\createorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\getorderbydealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\getorderbydealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\updatedelivery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\updatedelivery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\deliveriesbydealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\deliveriesbydealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\getdelivery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\getdelivery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\updateorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\updateorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\models\\tblorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\models\\tblorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\dealerprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\dealerprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\createorderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\createorderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HAI DANG\\AppData\\Local\\Temp\\TFSTemp\\vctmp11156_53457.UpdateDelivery.00000000.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -34,10 +97,6 @@
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\getorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\getorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -46,40 +105,12 @@
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\shared\\_dealerlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\createorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\createorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\createorderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\createorderdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\deliveries.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\deliveries.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\deliveriesbydealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\deliveriesbydealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\getdelivery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\getdelivery.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\adminindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\dealerprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\dealerprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\views\\home\\adminprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\adminprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\models\\updateorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\models\\updateorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\models\\neworder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,28 +121,8 @@
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\sem3\\stationeryapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\models\\deliveryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\models\\deliveryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\sem3\\stationeryapi\\shoppingmodels\\shoppingwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\shoppingmodels\\shoppingwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\sem3\\stationeryapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\sem3\\stationeryapi\\models\\democorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\models\\democorecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|c:\\sem3\\stationeryapi\\controllers\\democorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\controllers\\democorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|c:\\sem3\\stationeryweb\\models\\departmentview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -149,38 +160,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "UpdateDelivery.cshtml",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\UpdateDelivery.cshtml",
               "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\UpdateDelivery.cshtml",
               "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\UpdateDelivery.cshtml",
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\UpdateDelivery.cshtml",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-15T03:34:24.257Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "vctmp11156_53457.UpdateDelivery.00000000.cshtml",
-              "DocumentMoniker": "C:\\Users\\HAI DANG\\AppData\\Local\\Temp\\TFSTemp\\vctmp11156_53457.UpdateDelivery.00000000.cshtml",
-              "RelativeDocumentMoniker": "..\\Users\\HAI DANG\\AppData\\Local\\Temp\\TFSTemp\\vctmp11156_53457.UpdateDelivery.00000000.cshtml",
-              "ToolTip": "C:\\Users\\HAI DANG\\AppData\\Local\\Temp\\TFSTemp\\vctmp11156_53457.UpdateDelivery.00000000.cshtml",
-              "RelativeToolTip": "..\\Users\\HAI DANG\\AppData\\Local\\Temp\\TFSTemp\\vctmp11156_53457.UpdateDelivery.00000000.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T10:26:48.374Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -188,163 +185,105 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StationeryAPI.csproj",
+              "DocumentMoniker": "C:\\SEM3\\StationeryAPI\\StationeryAPI.csproj",
+              "RelativeDocumentMoniker": "StationeryAPI\\StationeryAPI.csproj",
+              "ToolTip": "C:\\SEM3\\StationeryAPI\\StationeryAPI.csproj",
+              "RelativeToolTip": "StationeryAPI\\StationeryAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-15T13:07:01.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAIYVAAAAAAAAAAAkwJsVAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-04-15T13:06:14.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TblOrder.cs",
+              "DocumentMoniker": "C:\\SEM3\\StationeryAPI\\ShoppingModels\\TblOrder.cs",
+              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\TblOrder.cs",
+              "ToolTip": "C:\\SEM3\\StationeryAPI\\ShoppingModels\\TblOrder.cs",
+              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\TblOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T13:05:09.376Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ShoppingWebContext.cs",
+              "DocumentMoniker": "C:\\SEM3\\StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
+              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
+              "ToolTip": "C:\\SEM3\\StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
+              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
+              "ViewState": "AQIAAOYAAAAAAAAAAAAvwPoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T13:04:16.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\SEM3\\StationeryAPI\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "StationeryAPI\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\SEM3\\StationeryAPI\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "StationeryAPI\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAHMBAAAAAAAAAAAvwIgBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T13:11:59.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StationeryWEB.csproj",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\StationeryWEB.csproj",
+              "RelativeDocumentMoniker": "StationeryWEB\\StationeryWEB.csproj",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\StationeryWEB.csproj",
+              "RelativeToolTip": "StationeryWEB\\StationeryWEB.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-15T13:07:02.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "StationeryWEB\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\SEM3\\StationeryWEB\\Controllers\\HomeController.cs",
               "RelativeToolTip": "StationeryWEB\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAlAAAA",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAvwIkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:43:44.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T16:43:44.893Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Register.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Register.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Register.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T08:56:21.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetOrderByDealer.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T08:09:46.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "GetOrder.cshtml",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\GetOrder.cshtml",
               "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\GetOrder.cshtml",
               "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\GetOrder.cshtml",
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\GetOrder.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAMAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAgwEkAAACVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T06:40:17.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABkAAAAAAAAAAAD4vywAAABLAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T17:09:13.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAFAAAAAAAAAAAAD4v2IAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T01:44:37.604Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Login.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Login.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Login.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T08:46:36.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateOrder.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T06:40:22.397Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AQIAAJ4AAAAAAAAAAAD4v6wAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-14T17:07:16.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_DealerLayout.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_DealerLayout.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Shared\\_DealerLayout.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_DealerLayout.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Shared\\_DealerLayout.cshtml",
-              "ViewState": "AQIAAKEAAAAAAAAAAAD4v7AAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T06:32:58.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreateOrderDetail.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\CreateOrderDetail.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\CreateOrderDetail.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\CreateOrderDetail.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\CreateOrderDetail.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T08:41:25.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T06:40:17.751Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Deliveries.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Deliveries.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Deliveries.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Deliveries.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Deliveries.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T06:39:33.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "DeliveriesByDealer.cshtml",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\DeliveriesByDealer.cshtml",
               "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\DeliveriesByDealer.cshtml",
@@ -352,47 +291,114 @@
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\DeliveriesByDealer.cshtml",
               "ViewState": "AQIAAB8AAAAAAAAAAAAUwDkAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T08:21:28.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T08:21:28.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
+              "Title": "GetOrderByDealer.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T08:09:46.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateOrder.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAIAAAACdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T06:40:22.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateOrder.cs",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\UpdateOrder.cs",
+              "RelativeDocumentMoniker": "StationeryWEB\\Models\\UpdateOrder.cs",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Models\\UpdateOrder.cs",
+              "RelativeToolTip": "StationeryWEB\\Models\\UpdateOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T03:00:23.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "GetDelivery.cshtml",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\GetDelivery.cshtml",
               "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\GetDelivery.cshtml",
               "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\GetDelivery.cshtml",
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\GetDelivery.cshtml",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAAoAAABEAAAA",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAAoAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T02:19:11.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T02:19:11.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Deliveries.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Deliveries.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Deliveries.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Deliveries.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Deliveries.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAEEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T06:39:33.192Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UpdateOrder.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\UpdateOrder.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\UpdateOrder.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\UpdateOrder.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\UpdateOrder.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T11:08:03.546Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "AdminIndex.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\AdminIndex.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\AdminIndex.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\AdminIndex.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\AdminIndex.cshtml",
-              "ViewState": "AQIAABwAAAAAAAAAAAAIwCUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T01:54:49.735Z",
-              "EditorCaption": ""
+              "Title": "TblOrder.cs",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\TblOrder.cs",
+              "RelativeDocumentMoniker": "StationeryWEB\\Models\\TblOrder.cs",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Models\\TblOrder.cs",
+              "RelativeToolTip": "StationeryWEB\\Models\\TblOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T12:25:02.541Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "AdminProfile.cshtml",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\AdminProfile.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\AdminProfile.cshtml",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\AdminProfile.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\AdminProfile.cshtml",
-              "ViewState": "AQIAAIUAAAAAAAAAAAD4v5UAAABJAAAA",
+              "Title": "CreateOrderDetail.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\CreateOrderDetail.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\CreateOrderDetail.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\CreateOrderDetail.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\CreateOrderDetail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T04:53:06.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T08:41:25.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "vctmp11156_53457.UpdateDelivery.00000000.cshtml",
+              "DocumentMoniker": "C:\\Users\\HAI DANG\\AppData\\Local\\Temp\\TFSTemp\\vctmp11156_53457.UpdateDelivery.00000000.cshtml",
+              "RelativeDocumentMoniker": "..\\Users\\HAI DANG\\AppData\\Local\\Temp\\TFSTemp\\vctmp11156_53457.UpdateDelivery.00000000.cshtml",
+              "ToolTip": "C:\\Users\\HAI DANG\\AppData\\Local\\Temp\\TFSTemp\\vctmp11156_53457.UpdateDelivery.00000000.cshtml",
+              "RelativeToolTip": "..\\Users\\HAI DANG\\AppData\\Local\\Temp\\TFSTemp\\vctmp11156_53457.UpdateDelivery.00000000.cshtml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T10:26:48.374Z"
             },
             {
               "$type": "Document",
@@ -404,12 +410,107 @@
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\DealerProfile.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T06:45:39.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T06:45:39.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Register.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Register.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T08:56:21.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABkAAAAAAAAAAAD4vywAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T17:09:13.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAFAAAAAAAAAAAAD4v2IAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T01:44:37.604Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T08:46:36.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAD4v6wAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T17:07:16.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_DealerLayout.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_DealerLayout.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Shared\\_DealerLayout.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Shared\\_DealerLayout.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Shared\\_DealerLayout.cshtml",
+              "ViewState": "AQIAAKEAAAAAAAAAAAD4v7AAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T06:32:58.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AdminIndex.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\AdminIndex.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\AdminIndex.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\AdminIndex.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\AdminIndex.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAIwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T01:54:49.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AdminProfile.cshtml",
+              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\Home\\AdminProfile.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\AdminProfile.cshtml",
+              "ToolTip": "C:\\SEM3\\StationeryWEB\\Views\\Home\\AdminProfile.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\AdminProfile.cshtml",
+              "ViewState": "AQIAAIUAAAAAAAAAAAD4v5UAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-15T04:53:06.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "StationeryWEB\\Views\\_ViewImports.cshtml",
@@ -417,51 +518,11 @@
               "RelativeToolTip": "StationeryWEB\\Views\\_ViewImports.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T03:17:20.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T03:17:20.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UpdateOrder.cs",
-              "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\UpdateOrder.cs",
-              "RelativeDocumentMoniker": "StationeryWEB\\Models\\UpdateOrder.cs",
-              "ToolTip": "C:\\SEM3\\StationeryWEB\\Models\\UpdateOrder.cs",
-              "RelativeToolTip": "StationeryWEB\\Models\\UpdateOrder.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T03:00:23.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\SEM3\\StationeryAPI\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\SEM3\\StationeryAPI\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "StationeryAPI\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAAHoBAAAAAAAAAAAAAIcBAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:45:16.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ShoppingWebContext.cs",
-              "DocumentMoniker": "C:\\SEM3\\StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "ToolTip": "C:\\SEM3\\StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAvwHIAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:55:00.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "NewOrder.cs",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\NewOrder.cs",
               "RelativeDocumentMoniker": "StationeryWEB\\Models\\NewOrder.cs",
@@ -469,12 +530,11 @@
               "RelativeToolTip": "StationeryWEB\\Models\\NewOrder.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:47:50.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T16:47:50.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "DeliveryViewModel.cs",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\DeliveryViewModel.cs",
               "RelativeDocumentMoniker": "StationeryWEB\\Models\\DeliveryViewModel.cs",
@@ -482,12 +542,11 @@
               "RelativeToolTip": "StationeryWEB\\Models\\DeliveryViewModel.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAkwAoAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:48:58.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T16:48:58.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "StationeryWEB\\Models\\ErrorViewModel.cs",
@@ -495,38 +554,11 @@
               "RelativeToolTip": "StationeryWEB\\Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:47:52.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T16:47:52.043Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\SEM3\\StationeryAPI\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\Models\\Employee.cs",
-              "ToolTip": "C:\\SEM3\\StationeryAPI\\Models\\Employee.cs",
-              "RelativeToolTip": "StationeryAPI\\Models\\Employee.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T01:49:58.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DemoCoreContext.cs",
-              "DocumentMoniker": "C:\\SEM3\\StationeryAPI\\Models\\DemoCoreContext.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\Models\\DemoCoreContext.cs",
-              "ToolTip": "C:\\SEM3\\StationeryAPI\\Models\\DemoCoreContext.cs",
-              "RelativeToolTip": "StationeryAPI\\Models\\DemoCoreContext.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAiwBcAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:45:20.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "DepartmentView.cs",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\DepartmentView.cs",
               "RelativeDocumentMoniker": "StationeryWEB\\Models\\DepartmentView.cs",
@@ -534,25 +566,11 @@
               "RelativeToolTip": "StationeryWEB\\Models\\DepartmentView.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:43:56.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T16:43:56.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "DemoCoreController.cs",
-              "DocumentMoniker": "C:\\SEM3\\StationeryAPI\\Controllers\\DemoCoreController.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\Controllers\\DemoCoreController.cs",
-              "ToolTip": "C:\\SEM3\\StationeryAPI\\Controllers\\DemoCoreController.cs",
-              "RelativeToolTip": "StationeryAPI\\Controllers\\DemoCoreController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:46:51.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\OrderDetail.cs",
               "RelativeDocumentMoniker": "StationeryWEB\\Models\\OrderDetail.cs",
@@ -560,12 +578,11 @@
               "RelativeToolTip": "StationeryWEB\\Models\\OrderDetail.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:45:01.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T16:45:01.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Program.cs",
               "RelativeDocumentMoniker": "StationeryWEB\\Program.cs",
@@ -573,12 +590,11 @@
               "RelativeToolTip": "StationeryWEB\\Program.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:49:09.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T16:49:09.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "UpdateDelivery.cs",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\UpdateDelivery.cs",
               "RelativeDocumentMoniker": "StationeryWEB\\Models\\UpdateDelivery.cs",
@@ -586,12 +602,11 @@
               "RelativeToolTip": "StationeryWEB\\Models\\UpdateDelivery.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:49:07.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T16:49:07.144Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "DemoCoreViewModel.cs",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\DemoCoreViewModel.cs",
               "RelativeDocumentMoniker": "StationeryWEB\\Models\\DemoCoreViewModel.cs",
@@ -599,12 +614,11 @@
               "RelativeToolTip": "StationeryWEB\\Models\\DemoCoreViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:43:55.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T16:43:55.687Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "OrderViewModel.cs",
               "DocumentMoniker": "C:\\SEM3\\StationeryWEB\\Models\\OrderViewModel.cs",
               "RelativeDocumentMoniker": "StationeryWEB\\Models\\OrderViewModel.cs",
@@ -612,8 +626,7 @@
               "RelativeToolTip": "StationeryWEB\\Models\\OrderViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T16:44:15.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-14T16:44:15.931Z"
             }
           ]
         }
