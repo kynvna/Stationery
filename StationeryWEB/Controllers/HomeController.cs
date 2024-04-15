@@ -67,6 +67,21 @@ namespace StationeryWEB.Controllers
 
             return View("Error");
         }
+        //Product - Admin
+        public async Task<IActionResult> AdminIndex(int page = 1, int pageSize = 10)
+        {
+            var client = _clientFactory.CreateClient();
+            var response = await client.GetAsync($"https://localhost:7106/api/Customer/GetProducts?page={page}&pageSize={pageSize}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                var products = JsonConvert.DeserializeObject<ProductPageViewModel>(jsonString);
+                return View(products);
+            }
+
+            return View("Error");
+        }
         //-------------------create new order----------------------//
         [HttpGet]
         public IActionResult CreateOrder()
@@ -113,8 +128,22 @@ namespace StationeryWEB.Controllers
         {
             return View(new UpdateOrder()); // Pass a new instance to the view for the form
         }
-
-
+        public IActionResult AdminProfile()
+        {
+            return View();
+        }
+        public IActionResult DealerProfile()
+        {
+            return View(); 
+        }
+        public IActionResult Login()
+        {
+            return View(); 
+        }
+        public IActionResult Register()
+        {
+            return View(); 
+        }
         [HttpPost]
         public async Task<IActionResult> UpdateOrder(UpdateOrder order)
         {
@@ -240,7 +269,8 @@ namespace StationeryWEB.Controllers
                     return View(orders);
                 }
                 catch (JsonSerializationException ex)
-                {
+                {   
+                    Console.WriteLine(ex.Message);
                     // Handle the exception, possibly log it, and return an error view
                     return View("Error");
                 }

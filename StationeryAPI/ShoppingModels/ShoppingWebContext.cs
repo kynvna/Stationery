@@ -45,7 +45,7 @@ public partial class ShoppingWebContext : DbContext
         
 
         // Your existing database configuration
-        optionsBuilder.UseSqlServer("Data Source=LAP14404\\SQLEXPRESS;Initial Catalog=ShoppingWeb;Persist Security Info=True;User ID=sa;Password=123;Encrypt=True;Trust Server Certificate=True");
+        optionsBuilder.UseSqlServer("Data Source=DESKTOP-NSN1HKQ;Initial Catalog=ShoppingWeb;Persist Security Info=True;User ID=sa;Password=IAmAdmin123;Encrypt=True;Trust Server Certificate=True");
 
         // Add the logging configuration
         var loggerFactory = LoggerFactory.Create(builder =>

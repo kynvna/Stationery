@@ -2,17 +2,25 @@
 
 @{
     ViewData["Title"] = "Get Delivery by ID and Display";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
-<h2>Orders</h2>
-
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox">
+            <div class="ibox-head">
+                <div class="ibox-title">Tra cứu đơn giao hàng</div> - <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="UpdateDelivery">Update Delivery</a>
+            </div>
+            <div class="ibox-body">
+                <form class="form-inline" id="GetDeliveryForm">
+                    <label class="sr-only" for="deliveryId">Tìm kiếm đơn giao hàng</label>
+                    <input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text" id="deliveryId" placeholder="Nhập mã giao hàng">
+                    <button class="btn btn-success" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Search Form -->
-<form id="GetDeliveryForm">
-    <label for="deliveryId">Delivery ID:</label>
-    <input type="text" id="deliveryId" />
-    <button type="submit">Find Delivery</button>
-</form>
-
 <!-- Placeholder for Order Details -->
 <div id="deliveryResult"></div>
 
@@ -38,14 +46,38 @@
                     const delivery = await response.json(); // Parse JSON response into JavaScript object
                     // Update the 'orderResult' div with fetched order details
                     document.getElementById('deliveryResult').innerHTML = `
-                                        <h3>Delivery Details:</h3>
-                                        <div><strong>Delivery ID:</strong> ${delivery.deliveryId}</div>
-                                        <div><strong>Order ID:</strong> ${delivery.orderId}</div>
-                                        <!-- Add more fields as necessary -->
+                                                              <div class="row">
+                       <div class="col-xl-12">
+                           <div class="ibox">
+                               <div class="ibox-head">
+                                   <div class="ibox-title">Kết quả tìm kiếm</div>
+                               </div>
+                               <div class="ibox-body">
+                                   <table class="table">
+                                       <thead class="thead-default">
+                                           <tr>
+                                               <th>ID đơn hàng</th>
+                                               <th>Mã khách hàng</th>
+                                               <th>Hành động</th>
+                                           </tr>
+                                       </thead>
+                                       <tbody>
+                                           <tr>
+                                                               <td>${delivery.deliveryId}</td>
+                                                               <td>${delivery.orderId}</td>
+                                                       <td>
+                                                                   <button class="btn btn-danger btn-rounded" onclick="deleteDelivery('${delivery.deliveryId}');">Delete</button>
+                                                                           <button class="btn btn-info btn-rounded" onclick="">Update</button>
+                                                       </td>
 
-                                        <!-- Direct Delete Button within Order Information -->
-                                        <button onclick="deleteDelivery('${delivery.deliveryId}');">Delete This Delivery</button>
-                                    `;
+                                           </tr>
+                                       </tbody>
+                                   </table>
+                               </div>
+                           </div>
+                       </div>
+                </div>
+                                            `;
                 }
             } catch (error) {
                 console.error('Error:', error);

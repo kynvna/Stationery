@@ -2,40 +2,63 @@
 
 @{
     ViewData["Title"] = "Update Delivery";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+<div class="row">
+    <div class="col-md-6">
+        <div class="ibox">
+            <div class="ibox-head">
+                <div class="ibox-title">Cập nhật thông tin giao hàng</div>
+            </div>
+            <div class="ibox-body">
+                <form id="updatedeliveryForm">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="deliveryId">Mã vận đơn</label>
+                            <input class="form-control" type="text" id="deliveryId" name="deliveryId" required placeholder="Mã vận đơn">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="orderId">Mã đơn</label>
+                            <input class="form-control" type="text" id="orderId" name="orderId" placeholder="Mã đơn hàng" required>
+                        </div>
+                    </div>
+                    <div class="form-group" id="date_3">
+                        <label class="font-normal" for="deliveryDate">Ngày giao</label>
+                        <div class="input-group date">
+                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                            <input class="form-control" type="date" id="deliveryDate" name="deliveryDate" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="deliveryStatus">Trạng thái</label>
+                            <input class="form-control" type="text" id="deliveryStatus" name="deliveryStatus" required placeholder="Trạng thái">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="deliveryFee">Phí giao hàng</label>
+                            <input class="form-control" type="number" id="deliveryFee" name="deliveryFee" required step="0.01" placeholder="Tổng giá" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="carrierName">Carrier Name:</label>
+                            <input class="form-control" type="text" id="carrierName" name="carrierName" required placeholder="Người giao hàng" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-rounded" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div id="deliveryResult"></div>
+    </div>
+</div>
 
-<h2>Update Delivery</h2>
 
-<form id="updatedeliveryForm">
-    <div>
-        <label for="deliveryId">Delivery ID:</label>
-        <input type="text" id="deliveryId" name="deliveryId" required>
-    </div>
-    <div>
-        <label for="orderId">Order Id:</label>
-        <input type="text" id="orderId" name="orderId" required>
-    </div>
-    <div>
-        <label for="deliveryDate">Delivery Date:</label>
-        <input type="date" id="deliveryDate" name="deliveryDate" required>
-    </div>
-    <div>
-        <label for="deliveryStatus">Delivery Status:</label>
-        <input type="text" id="deliveryStatus" name="deliveryStatus" required>
-    </div>
-    <div>
-        <label for="deliveryFee">Delivery Fee:</label>
-        <input type="number" id="deliveryFee" name="deliveryFee" required step="0.01">
-    </div>
-    <div>
-        <label for="carrierName">Carrier Name:</label>
-        <input type="text" id="carrierName" name="carrierName" required>
-    </div>
 
-    <button type="submit">Update Delivery</button>
-</form>
-
-<div id="deliveryResult"></div>
 
 @section Scripts {
     <script>
@@ -72,14 +95,38 @@
 
                     // Here is where you place the code to update the 'orderResult' div
                     document.getElementById('deliveryResult').innerHTML = `
-                                                                        <h3>Delivery Updated Successfully!</h3>
-                                                                        <div><strong>Order ID:</strong> ${returndelivery.deliveryId}</div>
-                                                                        <div><strong>Product ID:</strong> ${returndelivery.orderId}</div>
-                                                                        <div><strong>Customer ID:</strong> ${returndelivery.deliveryDate}</div>
-                                                                        <div><strong>Total Price:</strong> ${returndelivery.deliveryStatus}</div>
-                                                                        <div><strong>Order Status:</strong> ${returndelivery.deliveryFee}</div>
-                                                                        <div><strong>Payment Status:</strong> ${returndelivery.carrierName}</div>
-                                                                        <!-- Display other properties as needed -->
+                                                                                 <form id="updatedeliveryForm">
+              <div class="row">
+                  <div class="col-sm-6 form-group">
+                      <label for="deliveryId">Mã vận đơn</label>
+                      <input class="form-control" type="text" id="deliveryId" name="deliveryId" value="${returndelivery.deliveryId}" readonly required placeholder="Mã vận đơn">
+                  </div>
+                  <div class="form-group col-sm-6">
+                      <label for="orderId">Mã đơn</label>
+                      <input class="form-control" type="text" id="orderId" name="orderId" value="${returndelivery.orderId}" readonly placeholder="Mã đơn hàng" required>
+                  </div>
+              </div>
+              <div class="form-group">
+                      <label for="orderId">Mã đơn</label>
+                      <input class="form-control" type="text" id="orderId" name="orderId" value="${returndelivery.deliveryDate}" readonly placeholder="Mã đơn hàng" required>
+                  </div>
+              <div class="row">
+                  <div class="col-sm-6 form-group">
+                      <label for="deliveryStatus">Trạng thái</label>
+                      <input class="form-control" type="text" id="deliveryStatus" name="deliveryStatus" value="${returndelivery.deliveryStatus}" readonly required placeholder="Trạng thái">
+                  </div>
+                  <div class="form-group col-sm-6">
+                      <label for="deliveryFee">Phí giao hàng</label>
+                      <input class="form-control" type="number" id="deliveryFee" name="deliveryFee" value="${returndelivery.deliveryFee}" readonly required step="0.01" placeholder="Tổng giá" />
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-12 form-group">
+                      <label for="carrierName">Carrier Name:</label>
+                      <input class="form-control" type="text" id="carrierName" name="carrierName" value="${returndelivery.carrierName}" readonly required placeholder="Người giao hàng" />
+                  </div>
+              </div>
+          </form>
                                                                     `;
                 }
             } catch (error) {

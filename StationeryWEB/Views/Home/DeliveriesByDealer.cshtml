@@ -2,27 +2,74 @@
 
 @{
     ViewData["Title"] = "Delivery";
+    Layout = "~/Views/Shared/_DealerLayout.cshtml";
 }
 
-<h2>Deliveries</h2>
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox">
+            <div class="ibox-head">
+                <div class="ibox-title">Tra cứu đơn hàng theo người bán</div>
+            </div>
+            <div class="ibox-body">
+                <form class="form-inline" method="post" id="DeliveriesByDealerId">
+                    <label class="sr-only" for="dealerId">Mã người bán</label>
+                    <input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text" name="dealerId" id="dealerId" placeholder="Nhập tên người bán">
+                    <button class="btn btn-success" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
-<!-- Simplified Filter Form -->
-<form method="post" id="DeliveriesByDealerId">
-    <label for="dealerId">Dealer ID:</label>
-    
-    <input type="text" name="dealerId" id="dealerId" />
-    <button type="submit">Filter</button>
-</form>
-
-@foreach (var item in Model.Deliveries)
-{
-    <div>@item.DeliveryId</div>
-    <div>@item.OrderId</div>
-    <div>@item.DeliveryDate</div>
-    <div>@item.DeliveryStatus</div>
-    <div>@item.DeliveryFee</div>
-    <div>@item.CarrierName</div>
-}
+<div class="row">
+    <div class="col-xl-12">
+        <div class="ibox">
+            <div class="ibox-head">
+                <div class="ibox-title">Kết quả tìm kiếm</div>
+            </div>
+            <div class="ibox-body">
+                <table class="table">
+                    <thead class="thead-default">
+                        <tr>
+                            <th>Mã vận chuyển</th>
+                            <th>Mã đơn hàng</th>
+                            <th>Ngày giao hàng</th>
+                            <th>Trạng thái giao hàng</th>
+                            <th>Phí giao hàng</th>
+                            <th>Người giao hàng</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Deliveries != null)
+                        {
+                            @foreach (var item in Model.Deliveries)
+                            {
+                                <tr>
+                                    <td>@item.DeliveryId</td>
+                                    <td>@item.OrderId</td>
+                                    <td>@item.DeliveryDate</td>
+                                    <td>@item.DeliveryStatus</td>
+                                    <td>@item.DeliveryFee</td>
+                                    <td>@item.CarrierName</td>
+                                    <td>
+                                        <button class="btn btn-danger btn-rounded">Delete</button> &nbsp;
+                                        <button class="btn btn-info btn-rounded">Update</button>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <p>No orders found or data is incomplete.</p>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Pagination and script remain unchanged -->
 

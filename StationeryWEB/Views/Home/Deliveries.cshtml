@@ -2,34 +2,79 @@
 
 @{
     ViewData["Title"] = "Delivery";
+    Layout = "~/Views/Shared/_DealerLayout.cshtml";
 }
-
-<h2>Deliveries</h2>
-
-@foreach (var item in Model.Deliveries)
-{
-    <div>@item.DeliveryId</div>
-    <div>@item.OrderId</div>
-    <div>@item.DeliveryDate</div>
-    <div>@item.DeliveryStatus</div>
-    <div>@item.DeliveryFee</div>
-    <div>@item.CarrierName</div>
-    
-}
-
-<div>
-    Page @Model.CurrentPage of @Model.TotalPages
-
-    @if (Model.CurrentPage > 1)
-    {
-        <button onclick="goToPage(@(Model.CurrentPage - 1))">Previous</button>
-    }
-
-    @if (Model.CurrentPage < Model.TotalPages)
-    {
-        <button type="button" onclick="goToPage(@(Model.CurrentPage + 1))">Next</button>
-    }
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox">
+            <div class="ibox-head">
+                <div class="ibox-title">Danh sách đơn giao hàng</div>
+            </div>
+            <div class="ibox-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Mã đơn hàng</th>
+                                <th>Ngày giao hàng</th>
+                                <th>Trạng thái giao hàng</th>
+                                <th>Phí giao hàng</th>
+                                <th>Nhân viên giao</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Deliveries)
+                            {
+                                <tr>
+                                    <td>@item.DeliveryId</td>
+                                    <td>@item.OrderId</td>
+                                    <td>@item.DeliveryDate</td>
+                                    <td>@item.DeliveryStatus</td>
+                                    <td>@item.DeliveryFee</td>
+                                    <td>@item.CarrierName</td>
+                                    <td>
+                                        <button class="btn btn-danger btn-rounded">Delete</button>
+                                        <button class="btn btn-info btn-rounded">Update</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            Page @Model.CurrentPage of @Model.TotalPages
+
+            @if (Model.CurrentPage > 1)
+            {
+                <button onclick="goToPage(@(Model.CurrentPage - 1))">Previous</button>
+            }
+
+            @if (Model.CurrentPage < Model.TotalPages)
+            {
+                <button type="button" onclick="goToPage(@(Model.CurrentPage + 1))">Next</button>
+            }
+        </div>
+        <div>
+            <form method="get">
+                <label for="pageSize">Details per page:</label>
+                <select name="pageSize" onchange="this.form.submit()">
+                    <option selected="selected" value="@Model.PageSize">@Model.PageSize</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</div>
+
 
 <script>
     function goToPage(page) {
@@ -50,14 +95,3 @@
     }
 </div>
 
-<div>
-    <form method="get">
-        <label for="pageSize">Products per page:</label>
-        <select name="pageSize" onchange="this.form.submit()">
-            <option selected="selected" value="@Model.PageSize">@Model.PageSize</option>
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="20">20</option>
-        </select>
-    </form>
-</div>

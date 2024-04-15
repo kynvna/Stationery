@@ -93,6 +93,7 @@ namespace StationeryAPI.Controllers
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 // Log the exception if needed
                 return StatusCode(500, "An error occurred while creating the order.");
             }
@@ -154,6 +155,7 @@ namespace StationeryAPI.Controllers
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 // Log the exception if needed
                 return StatusCode(500, "An error occurred while creating the order.");
             }
@@ -244,6 +246,7 @@ namespace StationeryAPI.Controllers
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 // Log the exception if needed
                 return StatusCode(500, "An error occurred while creating the order.");
             }
@@ -390,6 +393,7 @@ namespace StationeryAPI.Controllers
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.Message);
                 // Log the exception if needed
                 return StatusCode(500, "An error occurred while creating the order.");
             }

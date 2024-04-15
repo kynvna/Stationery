@@ -34,15 +34,28 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="row">
+    @foreach (var item in Model.Products)
+    {
+        <div class="col-lg-3 col-sm-6">
+            <div class="product_box">
+                <h4 class="bursh_text">@item.ProName</h4>
+                <p class="lorem_text">@item.Description - Seller: <strong>@item.dealerId</strong></p>
+                <img src="@item.ImageLink" class="image_1">
+                <div class="btn_main">
+                    <div class="buy_bt">
+                        <ul>
+                            <li class="active"><a href="#">Buy Now</a></li>
+                            <li class="active"><a href="#">Buy Now</a></li>
+                        </ul>
+                    </div>
+                    <h3 class="price_text">@item.Price</h3>
+                </div>
+            </div>
+        </div>
+    }
+</div>
 
-<h2>Products</h2>
-
-@foreach (var item in Model.Products)
-{
-    <div>@item.ProId</div>
-    <div>@item.ProName</div>
-    <div>@item.dealerId</div>
-}
 
 <div>
     Page @Model.CurrentPage of @Model.TotalPages
@@ -81,10 +94,9 @@
     <form method="get">
         <label for="pageSize">Products per page:</label>
         <select name="pageSize" onchange="this.form.submit()">
-            <option selected="selected" value="@Model.PageSize">@Model.PageSize</option>
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="20">20</option>
+            <option value="4">4</option>
+            <option  value="8">8</option>
+            <option  value="12">12</option>
         </select>
     </form>
 </div>
