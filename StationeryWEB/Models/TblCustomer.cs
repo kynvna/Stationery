@@ -11,9 +11,7 @@ public partial class TblCustomer
 
     public string? Address { get; set; }
 
-    public string? Username { get; set; }
-
-    public string? Passw { get; set; }
+    
 
     public string? Tel { get; set; }
 

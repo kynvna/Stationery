@@ -8,6 +8,8 @@ E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\StationeryAPI.pdb
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Azure.Core.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Azure.Identity.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Humanizer.dll
+E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -32,6 +34,8 @@ E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -135,7 +139,3 @@ E:\Source\Stationery\StationeryAPI\obj\Debug\net8.0\refint\StationeryAPI.dll
 E:\Source\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.pdb
 E:\Source\Stationery\StationeryAPI\obj\Debug\net8.0\StationeryAPI.genruntimeconfig.cache
 E:\Source\Stationery\StationeryAPI\obj\Debug\net8.0\ref\StationeryAPI.dll
-E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
-E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
-E:\Source\Stationery\StationeryAPI\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
