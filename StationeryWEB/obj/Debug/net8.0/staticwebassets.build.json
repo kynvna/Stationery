@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5Om4vYrh/+nDhUPyFlinBuMtdgNaZ0V9Gm4LFTEAL9I=",
+  "Hash": "dp5GKdLGLoEn6ou9NCVtS23nAH/MlMbF029+CchiArw=",
   "Source": "StationeryWEB",
   "BasePath": "_content/StationeryWEB",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\Source\\Stationery\\StationeryWEB\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StationeryWEB.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\Source\\Stationery\\StationeryWEB\\wwwroot\\assets\\grape.jpg",
+      "SourceId": "StationeryWEB",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Source\\Stationery\\StationeryWEB\\wwwroot\\",
+      "BasePath": "_content/StationeryWEB",
+      "RelativePath": "assets/grape.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\grape.jpg"
     },
     {
       "Identity": "E:\\Source\\Stationery\\StationeryWEB\\wwwroot\\css\\site.css",

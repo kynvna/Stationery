@@ -3,72 +3,32 @@
   "WorkspaceRootPath": "E:\\Source\\Stationery\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\home\\updatecustomerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\updatecustomerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\home\\getcustomerproductbydealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\getcustomerproductbydealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\models\\updatecustomerproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\models\\updatecustomerproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\home\\createcustomerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\createcustomerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\models\\tblcustomerproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\models\\tblcustomerproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|e:\\source\\stationery\\stationeryapi\\shoppingmodels\\neworder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\shoppingmodels\\neworder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|e:\\source\\stationery\\stationeryapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\models\\customerproductviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\models\\customerproductviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\home\\getorderbydealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\getorderbydealer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|e:\\source\\stationery\\stationeryapi\\shoppingmodels\\newcustomerproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\shoppingmodels\\newcustomerproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\home\\createcustomerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\createcustomerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|e:\\source\\stationery\\stationeryapi\\shoppingmodels\\shoppingwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\shoppingmodels\\shoppingwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|e:\\source\\stationery\\stationeryapi\\shoppingmodels\\tblcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\shoppingmodels\\tblcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\models\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\models\\orderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\home\\createorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\createorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|e:\\source\\stationery\\stationeryweb\\views\\home\\getcustomerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EAE65D13-97AC-4D86-9834-C68D6DBA4FF3}|StationeryWEB\\StationeryWEB.csproj|solutionrelative:stationeryweb\\views\\home\\getcustomerproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|e:\\source\\stationery\\stationeryapi\\shoppingmodels\\updatecustomerproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF9ADD9E-2B92-4E89-A7DE-6066716A47AB}|StationeryAPI\\StationeryAPI.csproj|solutionrelative:stationeryapi\\shoppingmodels\\updatecustomerproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,46 +50,68 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NewOrder.cs",
+              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\NewOrder.cs",
+              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\NewOrder.cs",
+              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\NewOrder.cs",
+              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\NewOrder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T07:13:11.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "StationeryWEB\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "StationeryWEB\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAADgCAAAAAAAAAAAAAFQCAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T16:19:49.111Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "CreateCustomerProduct.cshtml",
               "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\CreateCustomerProduct.cshtml",
               "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\CreateCustomerProduct.cshtml",
               "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\CreateCustomerProduct.cshtml",
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\CreateCustomerProduct.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAFwAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T09:22:53.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdateCustomerProduct.cshtml",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\UpdateCustomerProduct.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\UpdateCustomerProduct.cshtml",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\UpdateCustomerProduct.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\UpdateCustomerProduct.cshtml",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAAAGQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T09:22:37.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T09:22:53.942Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GetCustomerProductByDealer.cshtml",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\GetCustomerProductByDealer.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\GetCustomerProductByDealer.cshtml",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\GetCustomerProductByDealer.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\GetCustomerProductByDealer.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T09:02:50.732Z",
-              "EditorCaption": ""
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "StationeryAPI\\Controllers\\CustomerController.cs",
+              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "StationeryAPI\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAowEMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T08:08:16.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StationeryWEB\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAADcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-16T02:08:38.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "StationeryWEB\\Views\\Shared\\_Layout.cshtml",
@@ -137,142 +119,11 @@
               "RelativeToolTip": "StationeryWEB\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAADEAAAAAAAAAAAAAAD0AAACVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T09:22:27.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateCustomerProduct.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Models\\UpdateCustomerProduct.cs",
-              "RelativeDocumentMoniker": "StationeryWEB\\Models\\UpdateCustomerProduct.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Models\\UpdateCustomerProduct.cs",
-              "RelativeToolTip": "StationeryWEB\\Models\\UpdateCustomerProduct.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:24:17.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TblCustomerProduct.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Models\\TblCustomerProduct.cs",
-              "RelativeDocumentMoniker": "StationeryWEB\\Models\\TblCustomerProduct.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Models\\TblCustomerProduct.cs",
-              "RelativeToolTip": "StationeryWEB\\Models\\TblCustomerProduct.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T08:32:55.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T09:22:27.909Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "StationeryWEB\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "StationeryWEB\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAD4CAAAAAAAAAAAAAEYCAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T16:19:49.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\Controllers\\CustomerController.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "StationeryAPI\\Controllers\\CustomerController.cs",
-              "ViewState": "AQIAAA0CAAAAAAAAAAAAAFICAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T08:08:16.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CustomerProductViewModel.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Models\\CustomerProductViewModel.cs",
-              "RelativeDocumentMoniker": "StationeryWEB\\Models\\CustomerProductViewModel.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Models\\CustomerProductViewModel.cs",
-              "RelativeToolTip": "StationeryWEB\\Models\\CustomerProductViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T09:04:22.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetOrderByDealer.cshtml",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\GetOrderByDealer.cshtml",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAqwGQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T08:58:01.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NewCustomerProduct.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\NewCustomerProduct.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\NewCustomerProduct.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\NewCustomerProduct.cs",
-              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\NewCustomerProduct.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T15:36:45.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ShoppingWebContext.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\ShoppingWebContext.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAswDgAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T15:02:00.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OrderViewModel.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Models\\OrderViewModel.cs",
-              "RelativeDocumentMoniker": "StationeryWEB\\Models\\OrderViewModel.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Models\\OrderViewModel.cs",
-              "RelativeToolTip": "StationeryWEB\\Models\\OrderViewModel.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAWwBcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T06:40:23.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TblCustomer.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\TblCustomer.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\TblCustomer.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\TblCustomer.cs",
-              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\TblCustomer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T07:15:51.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "CreateOrder.cshtml",
               "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
               "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
@@ -280,34 +131,7 @@
               "RelativeToolTip": "StationeryWEB\\Views\\Home\\CreateOrder.cshtml",
               "ViewState": "AQIAAFMAAAAAAAAAAAAAAGEAAABxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T06:05:19.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GetCustomerProduct.cshtml",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\GetCustomerProduct.cshtml",
-              "RelativeDocumentMoniker": "StationeryWEB\\Views\\Home\\GetCustomerProduct.cshtml",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryWEB\\Views\\Home\\GetCustomerProduct.cshtml",
-              "RelativeToolTip": "StationeryWEB\\Views\\Home\\GetCustomerProduct.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-15T03:51:02.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UpdateCustomerProduct.cs",
-              "DocumentMoniker": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\UpdateCustomerProduct.cs",
-              "RelativeDocumentMoniker": "StationeryAPI\\ShoppingModels\\UpdateCustomerProduct.cs",
-              "ToolTip": "E:\\Source\\Stationery\\StationeryAPI\\ShoppingModels\\UpdateCustomerProduct.cs",
-              "RelativeToolTip": "StationeryAPI\\ShoppingModels\\UpdateCustomerProduct.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:44:02.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-15T06:05:19.761Z"
             }
           ]
         }

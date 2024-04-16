@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\StationeryWEB.bundle.scp.css"
     },
     {
+      "Id": "E:\\Source\\Stationery\\StationeryWEB\\wwwroot\\assets\\grape.jpg",
+      "PackagePath": "staticwebassets\\assets\\grape.jpg"
+    },
+    {
       "Id": "E:\\Source\\Stationery\\StationeryWEB\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

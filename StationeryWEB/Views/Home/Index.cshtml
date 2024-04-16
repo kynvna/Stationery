@@ -1,48 +1,60 @@
-﻿@* @model IEnumerable<WeatherForecast>
-
-@{
-    ViewData["Title"] = "Weather Forecast";
-}
-
-<h2>@ViewData["Title"]</h2>
-
-@foreach (var forecast in Model)
-{
-    <div class="weather-forecast">
-        <h3>@forecast.Date.ToShortDateString()</h3>
-        <p>Temperature: @forecast.TemperatureC&deg;C</p>
-        <p>Summary: @forecast.Summary</p>
-    </div>
-} *@
-@* @model IEnumerable<StationeryAPI.ShoppingModels.TblProduct>
+﻿@model ProductPageViewModel
 
 @{
     ViewData["Title"] = "Index";
 }
 
 <h2>Products</h2>
-@foreach (var item in Model)
-{
-    <div>@item.ProId</div>
-    <div>@item.ProName</div>
 
-}
- *@
+<style>
+    .product {
+        float: left;
+        width: 200px; /* Adjust width as needed */
+        margin-right: 20px; /* Space between product blocks */
+        text-align: center; /* Center align the text below the image */
+    }
 
-@model ProductPageViewModel
+        .product img {
+            width: 100%; /* Make image fill the container */
+            height: auto; /* Keep image aspect ratio */
+        }
 
-@{
-    ViewData["Title"] = "Index";
-}
+        .product div {
+            margin-top: 5px; /* Space between text elements */
+        }
 
-<h2>Products</h2>
+        .product button {
+            margin-top: 10px; /* Space above the button */
+            padding: 8px 16px; /* Padding for button size */
+            background-color: #007BFF; /* Button color */
+            color: white; /* Text color */
+            border: none;
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+
+            .product button:hover {
+                background-color: #0056b3; /* Darker shade on hover */
+            }
+
+    .clear {
+        clear: both; /* Clear float */
+    }
+</style>
 
 @foreach (var item in Model.Products)
 {
-    <div>@item.ProId</div>
-    <div>@item.ProName</div>
-    <div>@item.dealerId</div>
+    <div class="product">
+        <img src="/assets/grape.jpg" alt="@item.ProName" />
+        @* <div>@item.ProId</div> *@
+        @* <div>@item.ProName</div> *@
+        <div>@item.Description</div>
+        <div>@item.Price</div>
+        <button onclick="location.href='@Url.Action("RegisterProductById", "Home", new { id = item.ProId })'">Order Now</button>
+    </div>
 }
+
+<div class="clear"></div>
 
 <div>
     Page @Model.CurrentPage of @Model.TotalPages

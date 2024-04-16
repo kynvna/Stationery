@@ -55,7 +55,29 @@ namespace StationeryAPI.Controllers
 
             return Ok(response);
         }
+        //---------------------------------------Register Product by Id------------------------------------------//
+        [HttpGet("RegisterProductById/{id}")]
+        public async Task<ActionResult> RegisterProductById(String id)
+        {
+            var product = await _context.TblProducts.FirstOrDefaultAsync(o=> o.ProId == id);
+                                  
 
+            if (product == null)
+            {
+                return NotFound();
+            }
+            var customerproduct=new NewCustomerProduct();
+            customerproduct.ProId = product.ProId;
+            customerproduct.Price= (decimal)product.Price;
+            customerproduct.Fullname = "Please fill in";
+            customerproduct.Address = "Please fill in";
+            customerproduct.Tel = "Pleae fill in";
+
+
+            return Ok(customerproduct);
+        }
+
+        //------------------------------------------------------------------------------------------//
         //----------------------- Post a new order <add in availability check>----------------------//
         [HttpPost("CreateOrder")]
         public async Task<IActionResult> Post([FromBody] NewOrder newOrder)
