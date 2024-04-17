@@ -37,6 +37,8 @@ public partial class ShoppingWebContext : DbContext
 
     public virtual DbSet<TblStock> TblStocks { get; set; }
 
+    public virtual DbSet<TblCustomerProduct> TblCustomerProducts { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 
     //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -186,15 +188,11 @@ public partial class ShoppingWebContext : DbContext
             entity.Property(e => e.Fullname)
                 .HasMaxLength(100)
                 .HasColumnName("fullname");
-            entity.Property(e => e.Passw)
-                .HasMaxLength(100)
-                .HasColumnName("passw");
+           
             entity.Property(e => e.Tel)
                 .HasMaxLength(12)
                 .HasColumnName("tel");
-            entity.Property(e => e.Username)
-                .HasMaxLength(100)
-                .HasColumnName("username");
+          
         });
 
         modelBuilder.Entity<TblDelivery>(entity =>
@@ -235,9 +233,7 @@ public partial class ShoppingWebContext : DbContext
 
         modelBuilder.Entity<TblOrder>(entity =>
         {
-            //entity.HasKey(e => e.OrderId).HasName("PK_Order");
-
-            //entity.ToTable("tblOrder");
+            
 
             entity.HasKey(e => e.OrderId).HasName("PK_Order");
             entity.ToTable("tblOrder");
@@ -257,22 +253,7 @@ public partial class ShoppingWebContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Order_Product");
 
-            //--------------------------
-
-        //    entity.Property(e => e.OrderId)
-        //        .HasMaxLength(32)
-        //        .HasColumnName("orderID");
-        //    entity.Property(e => e.CustomerId)
-        //        .HasMaxLength(32)
-        //        .HasColumnName("customerID");
-        //    entity.Property(e => e.productId)
-        //        .HasMaxLength(32)
-        //        .HasColumnName("productId");
-        //    entity.HasOne(d => d.Product) // Navigation property in TblOrder
-        //.WithMany(p => p.Orders) // Navigation property in TblProduct
-        //.HasForeignKey(d => d.productId) // Foreign key property in TblOrder
-        //.OnDelete(DeleteBehavior.ClientSetNull) // Optional: Configure delete behavior
-        //.HasConstraintName("FK_Order_Product");
+   
             entity.Property(e => e.OrderDate)
                 .HasColumnType("datetime")
                 .HasColumnName("order_date");
@@ -438,7 +419,66 @@ public partial class ShoppingWebContext : DbContext
                 .HasConstraintName("PK_StockToProduct");
         });
 
+        //modelBuilder.Entity<TblCustomerProduct>()
+        // .HasKey(cp => new { cp.CustomerId, cp.ProductId });
+
+        //modelBuilder.Entity<TblCustomerProduct>()
+        //    .HasOne(cp => cp.Customer)
+        //    .WithMany(c => c.CustomerProducts)
+        //    .HasForeignKey(cp => cp.CustomerId);
+
+        //modelBuilder.Entity<TblCustomerProduct>()
+        //    .HasOne(cp => cp.Product)
+        //    .WithMany(p => p.CustomerProducts)
+        //    .HasForeignKey(cp => cp.ProductId);
+
+        //modelBuilder.Entity<TblCustomerProduct>(entity =>
+        //{
+
+        //    entity.Property(e => e.Status)
+        //        .HasMaxLength(32)
+        //        .HasColumnName("Status");
+        //    entity.Property(e => e.Price)
+        //        .HasColumnType("decimal(18, 2)")
+        //        .HasColumnName("price");
+        //});
+
+        modelBuilder.Entity<TblCustomerProduct>(entity =>
+        {
+            entity.ToTable("tblCustomerProduct");  // Ensure table name is correct
+            entity.HasKey(cp => new { cp.CustomerId, cp.ProductId }).HasName("PK_CustomerProduct");
+
+            // Update to match the database column names
+            entity.Property(cp => cp.CustomerId)
+                  .HasColumnName("custID");  // Corrected to match the database column name
+            entity.Property(cp => cp.ProductId)
+                  .HasColumnName("ProID");  // Corrected to match the database column name
+
+            entity.Property(cp => cp.Status)
+                  .HasMaxLength(32)
+                  .HasColumnName("Status");
+            entity.Property(cp => cp.Price)
+                  .HasColumnType("decimal(18, 2)")
+                  .HasColumnName("price");
+
+            // Define relationships
+            entity.HasOne(cp => cp.Customer)
+                  .WithMany(c => c.CustomerProducts)
+                  .HasForeignKey(cp => cp.CustomerId)
+                  .OnDelete(DeleteBehavior.ClientSetNull)
+                  .HasConstraintName("FK_CustomerProduct_Customer");
+
+            entity.HasOne(cp => cp.Product)
+                  .WithMany(p => p.CustomerProducts)
+                  .HasForeignKey(cp => cp.ProductId)
+                  .OnDelete(DeleteBehavior.ClientSetNull)
+                  .HasConstraintName("FK_CustomerProduct_Product");
+        });
+
+
+
         OnModelCreatingPartial(modelBuilder);
+        
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);

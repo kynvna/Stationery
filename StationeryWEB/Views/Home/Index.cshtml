@@ -1,7 +1,7 @@
-﻿@* @model IEnumerable<WeatherForecast>
+﻿@model ProductPageViewModel
 
 @{
-    ViewData["Title"] = "Weather Forecast";
+    ViewData["Title"] = "Index";
 }
 
 <h2>@ViewData["Title"]</h2>
@@ -31,6 +31,26 @@
 
 @model ProductPageViewModel
 
+            .product button:hover {
+                background-color: #0056b3; /* Darker shade on hover */
+            }
+
+    .clear {
+        clear: both; /* Clear float */
+    }
+</style>
+
+@foreach (var item in Model.Products)
+{
+    <div class="product">
+        <img src="/assets/grape.jpg" alt="@item.ProName" />
+        @* <div>@item.ProId</div> *@
+        @* <div>@item.ProName</div> *@
+        <div>@item.Description</div>
+        <div>@item.Price</div>
+        <button onclick="location.href='@Url.Action("RegisterProductById", "Home", new { id = item.ProId })'">Order Now</button>
+    </div>
+}
 @{
     ViewData["Title"] = "Index";
 }
@@ -56,6 +76,8 @@
     }
 </div>
 
+
+<div class="clear"></div>
 
 <div>
     Page @Model.CurrentPage of @Model.TotalPages

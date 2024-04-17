@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pblByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/SEM3/StationeryWEB/Views/Home/CreateCustomerProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVDdXN0b21lclByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/SEM3/StationeryWEB/Views/Home/CreateOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +48,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/SEM3/StationeryWEB/Views/Home/DeliveriesByDealer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxpdmVyaWVzQnlEZWFsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SEM3/StationeryWEB/Views/Home/GetCustomerProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRDdXN0b21lclByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SEM3/StationeryWEB/Views/Home/GetCustomerProductByDealer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRDdXN0b21lclByb2R1Y3RCeURlYWxlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SEM3/StationeryWEB/Views/Home/GetCustomerProductById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRDdXN0b21lclByb2R1Y3RCeUlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/SEM3/StationeryWEB/Views/Home/GetDelivery.cshtml]
@@ -72,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/SEM3/StationeryWEB/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SEM3/StationeryWEB/Views/Home/UpdateCustomerProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVDdXN0b21lclByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/SEM3/StationeryWEB/Views/Home/UpdateDelivery.cshtml]

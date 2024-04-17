@@ -25,34 +25,7 @@ namespace StationeryWEB.Controllers
             _clientFactory = clientFactory;
         }
 
-        //public async Task<IActionResult> Index()
-        //{
-        //    //var client = _clientFactory.CreateClient();
-        //    //var response = await client.GetAsync("https://localhost:7106/weatherforecast");
-        //    //if (response.IsSuccessStatusCode)
-        //    //{
-        //    //    var jsonString = await response.Content.ReadAsStringAsync();
-        //    //    var weatherData = JsonConvert.DeserializeObject<IEnumerable<WeatherForecast>>(jsonString);
-        //    //    // Now you have your weather data and you can pass it to the view
-        //    //    return View(weatherData);
-        //    //}
-
-        //        var client = _clientFactory.CreateClient();
-        //        var response = await client.GetAsync("https://localhost:7106/api/Customer/GetProducts");
-        //        if (response.IsSuccessStatusCode)
-        //        {
-        //            var jsonString = await response.Content.ReadAsStringAsync();
-
-
-        //        var products = JsonConvert.DeserializeObject<ProductPageViewModel>(jsonString);
-
-        //        return View(products);
-
-        //        }
-
-
-        //    return View("Error");
-        //}
+        
 
         public async Task<IActionResult> Index(int page = 1, int pageSize = 10)
         {
@@ -432,7 +405,7 @@ namespace StationeryWEB.Controllers
             return View("Error");
         }
       
-        //--------------------------Update delivery          -----------------------------//
+        //--------------------------Update delivery  -----------------------------//
         [HttpGet]
         public async Task<IActionResult> UpdateDeliveryAsync()
         {
@@ -529,7 +502,258 @@ namespace StationeryWEB.Controllers
             }
         }
 
-        //-----------------------------------------------------------------------------//
+        //-----------------------------Get all customerproduct--------------------------------//
+
+        public async Task<IActionResult> GetCustomerProduct(int page = 1, int pageSize = 10)
+        {
+            var client = _clientFactory.CreateClient();
+            var response = await client.GetAsync($"https://localhost:7106/api/Customer/GetCustomerProduct?page={page}&pageSize={pageSize}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                var customerproducts = JsonConvert.DeserializeObject<CustomerProductViewModel>(jsonString);
+                return View(customerproducts);
+
+
+            }
+
+            return View("Error");
+        }
+
+        //-------------------------------Creating a customerproduct-----------------------//
+        [HttpGet]
+        public IActionResult CreateCustomerProduct()
+        {
+            return View(new NewCustomerProduct()); // Pass a new instance to the view for the form
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> CreateCustomerProduct(NewCustomerProduct customerProduct)
+        {
+            try
+            {
+                var client = _clientFactory.CreateClient();
+                string json = Newtonsoft.Json.JsonConvert.SerializeObject(customerProduct);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                string url = "https://localhost:7106/api/Customer/CreateCustomerProduct";
+
+                var response = await client.PostAsync(url, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    // Assuming you want to redirect the user to the Index action after successful order creation
+                    return RedirectToAction("CreateCustomerProduct");
+                }
+                else
+                {
+                    // Log error response and possibly display an error message to the user
+                    _logger.LogError("Failed to create order. Status code: {StatusCode}", response.StatusCode);
+                    return View("Error"); // Make sure you have an Error view or handle this appropriately
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                _logger.LogError(ex, "An error occurred while creating the customerproduct.");
+                return View("Error"); // Handle exceptions
+            }
+        }
+        //---------------------------------Get & Delete a CustomerProductByID-----------------------//
+
+        public async Task<IActionResult> GetCustomerProductById(string custId,string ProId)
+        {
+            var client = _clientFactory.CreateClient();
+
+            
+
+            var response = await client.GetAsync($"https://localhost:7106/api/Customer/GetOrder/{custId}&{ProId}");
+
+            if (response.IsSuccessStatusCode)
+            {
+
+                // Now you can return the order object to your view or handle it as needed
+                return View(response);
+            }
+            else
+            {
+                // Handle null (deserialization failed or JSON is empty)
+                return View();
+            }
+
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteCustomerProduct(string custId,string ProId)
+        {
+            var client = _clientFactory.CreateClient();
+            var response = await client.DeleteAsync($"https://localhost:7106/api/Customer/DeleteCustomerProduct/{custId}&{ProId}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                // Redirect to a confirmation page or back to the order list
+                return RedirectToAction("DeleteCustomerOrder");
+            }
+            else
+            {
+                // Handle the error or return to the order with an error message
+                return View("ErrorDeletingOrder");
+            }
+        }
+
+        //-------------------------------- Get CustomerProductByDealer-----------------------------------------------//
+
+        [HttpGet]
+        public IActionResult GetCustomerProductByDealer()
+        {
+            
+            var model = new CustomerProductViewModel
+            {
+
+                CustomerProducts = new List<StationeryAPI.ShoppingModels.TblCustomerProduct>(), // Initialize the nested list
+
+                TotalCustomerProducts = 0, // Default initialization values
+                TotalPages = 0,
+                CurrentPage = 1,
+                PageSize = 10
+            };
+
+            return View(model);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> GetCustomerProductByDealer(string? dealerId, int page = 1, int pageSize = 10)
+        {
+            var client = _clientFactory.CreateClient();
+            var url = $"https://localhost:7106/api/Customer/GetCustomerProductByDealer?page={page}&pageSize={pageSize}";
+
+            // Append deaId to the URL if it's not null, using HttpUtility.UrlEncode for URL encoding
+            if (dealerId != null)
+            {
+                url += $"&dealerId={System.Net.WebUtility.UrlEncode(dealerId)}";
+            }
+
+            var response = await client.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                try
+                {
+                    var customerproducts = JsonConvert.DeserializeObject<CustomerProductViewModel>(jsonString);
+                    return View(customerproducts);
+                }
+                catch (JsonSerializationException ex)
+                {
+                    // Handle the exception, possibly log it, and return an error view
+                    return View("Error");
+                }
+            }
+
+            return View("Error");
+        }
+
+        //--------------------------------------Update customerproduct------------------------------//
+        [HttpGet]
+        public IActionResult UpdateCustomerProduct()
+        {
+            return View(new UpdateCustomerProduct()); // Pass a new instance to the view for the form
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateCustomerProduct(UpdateCustomerProduct updatecustomerproduct)
+        {
+            try
+            {
+                var client = _clientFactory.CreateClient();
+                string json = Newtonsoft.Json.JsonConvert.SerializeObject(updatecustomerproduct);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                string url = "https://localhost:7106/api/Customer/Updateupdatecustomerproduct";
+
+                var response = await client.PostAsync(url, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    // Assuming you want to redirect the user to the Index action after successful order creation
+                    return RedirectToAction("UpdateCustomerProduc");
+                }
+                else
+                {
+                    // Log error response and possibly display an error message to the user
+                    _logger.LogError("Failed to create order. Status code: {StatusCode}", response.StatusCode);
+                    return View("Error"); // Make sure you have an Error view or handle this appropriately
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                _logger.LogError(ex, "An error occurred while creating the order.");
+                return View("Error"); // Handle exceptions
+            }
+        }
+
+        //---------------------------------customer order form---------------------------------------//
+        [HttpGet]
+        public async Task<IActionResult> RegisterProductById(string id)
+        {
+            var client = _clientFactory.CreateClient();
+            var response = await client.GetAsync($"https://localhost:7106/api/Customer/RegisterProductById/{id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                var responseData = await response.Content.ReadAsStringAsync();
+                var product = JsonConvert.DeserializeObject<NewCustomerProduct>(responseData); // Assuming the use of Newtonsoft.Json and a 'Product' model
+
+                TempData["NewCustomerProduct"] = product;
+                return View("CreateCustomerProduct"); // Corrected to return a view with the data
+            }
+            else
+            {
+                // It's a good practice to provide error details or logging here
+                ViewBag.ErrorMessage = "Failed to retrieve product details. Please try again.";
+                return View("Error"); // Redirect to an error view or similar approach
+            }
+        }
+
+
+
+        //[HttpPost]
+        //public async Task<IActionResult> RegisterProductById(NewCustomerProduct newcustomerproduct)
+        //{
+        //    try
+        //    {
+        //        var client = _clientFactory.CreateClient();
+        //        string json = Newtonsoft.Json.JsonConvert.SerializeObject(newcustomerproduct);
+        //        var content = new StringContent(json, Encoding.UTF8, "application/json");
+        //        string url = "https://localhost:7106/api/Customer/CreateCustomerProduct";
+
+        //        var response = await client.PostAsync(url, content);
+
+        //        if (response.IsSuccessStatusCode)
+        //        {
+        //            // Assuming you want to redirect the user to the Index action after successful order creation
+        //            return RedirectToAction("RegisterProductById");
+        //        }
+        //        else
+        //        {
+        //            // Log error response and possibly display an error message to the user
+        //            _logger.LogError("Failed to create order. Status code: {StatusCode}", response.StatusCode);
+        //            return View("Error"); // Make sure you have an Error view or handle this appropriately
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Log the exception
+        //        _logger.LogError(ex, "An error occurred while creating the order.");
+        //        return View("Error"); // Handle exceptions
+        //    }
+        //}
+
+        //------------------------------------------------------------------------------------------//
         public IActionResult Privacy()
         {
             return View();

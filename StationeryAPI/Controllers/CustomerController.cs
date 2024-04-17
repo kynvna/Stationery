@@ -55,7 +55,29 @@ namespace StationeryAPI.Controllers
 
             return Ok(response);
         }
+        //---------------------------------------Register Product by Id------------------------------------------//
+        [HttpGet("RegisterProductById/{id}")]
+        public async Task<ActionResult> RegisterProductById(String id)
+        {
+            var product = await _context.TblProducts.FirstOrDefaultAsync(o=> o.ProId == id);
+                                  
 
+            if (product == null)
+            {
+                return NotFound();
+            }
+            var customerproduct=new NewCustomerProduct();
+            customerproduct.ProId = product.ProId;
+            customerproduct.Price= (decimal)product.Price;
+            customerproduct.Fullname = "Please fill in";
+            customerproduct.Address = "Please fill in";
+            customerproduct.Tel = "Pleae fill in";
+
+
+            return Ok(customerproduct);
+        }
+
+        //------------------------------------------------------------------------------------------//
         //----------------------- Post a new order <add in availability check>----------------------//
         [HttpPost("CreateOrder")]
         public async Task<IActionResult> Post([FromBody] NewOrder newOrder)
@@ -116,7 +138,7 @@ namespace StationeryAPI.Controllers
 
             return Ok(order);
             }
-            //---------------------Update Order by id--------------------------------//
+        //---------------------Update Order by id--------------------------------//
 
 
         [HttpPost("UpdateOrder")]
@@ -416,7 +438,235 @@ namespace StationeryAPI.Controllers
             return NoContent(); // Returns a 204 No Content response
         }
 
-        //-----------------------------------------------------------------------//
+        //---------------------------Creat CustomerProduct--------------------------------------------//
+        [HttpGet("GetCustomerProduct")]
+        public ActionResult GetCustomerProduct([FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        {
+            // Calculate the total number of products
+            int totalCustomerProducts = _context.TblCustomerProducts.Count();
+
+            // Calculate the total number of pages
+            var totalPages = (int)Math.Ceiling(totalCustomerProducts / (double)pageSize);
+
+            // Fetch the products for the requested page
+            var customerproducts = _context.TblCustomerProducts
+                                   .Skip((page - 1) * pageSize) // Skip the products from the previous pages
+                                   .Take(pageSize)              // Take the next 'pageSize' number of products
+                                   .ToList();                   // Execute the query and get the list of products
+
+            // Prepare the response
+            var response = new
+            {
+                TotalCustomerProducts = totalCustomerProducts,
+                TotalPages = totalPages,
+                CurrentPage = page,
+                PageSize = pageSize,
+                CustomerProducts = customerproducts
+            };
+
+            return Ok(response);
+        }
+        //--------------------------------Get customerproduct by customerid---------------//
+
+        [HttpGet("GetCustomerProductByCustomerId")]
+        public ActionResult GetCustomerProductByCustomerId([FromQuery] string customerId, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        {
+            // Calculate the total number of products for the specific customer
+            int totalCustomerProducts = _context.TblCustomerProducts
+                                                .Where(cp => cp.CustomerId == customerId)
+                                                .Count();
+
+            // Calculate the total number of pages
+            var totalPages = (int)Math.Ceiling(totalCustomerProducts / (double)pageSize);
+
+            // Fetch the products for the requested page and specific customer
+            var customerproducts = _context.TblCustomerProducts
+                                    .Where(cp => cp.CustomerId == customerId)
+                                    .Skip((page - 1) * pageSize) // Skip the products from the previous pages
+                                    .Take(pageSize)              // Take the next 'pageSize' number of products
+                                    .ToList();                   // Execute the query and get the list of products
+
+            // Prepare the response
+            var response = new
+            {
+                TotalCustomerProducts = totalCustomerProducts,
+                TotalPages = totalPages,
+                CurrentPage = page,
+                PageSize = pageSize,
+                CustomerProducts = customerproducts
+            };
+
+            return Ok(response);
+        }
+
+
+        //--------------------------------Creat customerproduct-------------------------------------//
+
+        [HttpPost("CreateCustomerProduct")]
+        public async Task<IActionResult> Post([FromBody] NewCustomerProduct newcustomerproduct)
+        {
+            if (newcustomerproduct == null || !ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                var customer = new TblCustomer();
+                var customerproduct= new TblCustomerProduct();
+
+                //newTblOrder.OrderId = Guid.NewGuid().ToString("N"); // Produces a 32-character hexadecimal string.
+                //newTblOrder.OrderId = GenerateOrderNumberUsingTicks();
+               // newTblOrder.OrderDate = DateTime.UtcNow.AddHours(7);
+                       
+
+                customer.CustId = GenerateOrderNumberUsingTicks();
+                customer.Fullname = newcustomerproduct.Fullname;
+                customer.Address = newcustomerproduct.Address;
+                customer.Tel = newcustomerproduct.Tel;
+                customer.Active = true;
+                _context.TblCustomers.Add(customer);
+                _context.SaveChanges();
+                customerproduct.CustomerId = customer.CustId;
+                customerproduct.ProductId = newcustomerproduct.ProId;
+                customerproduct.Status = "New";
+                customerproduct.Price = newcustomerproduct.Price;
+
+                // Add the new order to the database context
+                
+                _context.TblCustomerProducts.Add(customerproduct);
+
+                // Save the changes to the database
+                await _context.SaveChangesAsync();
+
+                // Return a success response, perhaps with the created order object
+                // and the URL where the order can be accessed (e.g., Get Order by ID)
+                return CreatedAtAction(nameof(GetCustomerProductByCustomerId), new { id = customerproduct.CustomerId }, customerproduct);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception if needed
+                return StatusCode(500, "An error occurred while creating the order.");
+            }
+        }
+        //-----------------------------Update CustomerProduct------------------------------------------//
+
+
+        [HttpPost("UpdateCustomerProduct")]
+        public async Task<IActionResult> UpdateCustomerProduct([FromBody] StationeryAPI.ShoppingModels.UpdateCustomerProduct updateCustomerProduct)
+        {
+            if (updateCustomerProduct == null || !ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                var customerproduct = _context.TblCustomerProducts.FirstOrDefault(o => o.CustomerId == updateCustomerProduct.CustId && o.ProductId==updateCustomerProduct.ProId);
+
+                if (customerproduct != null)
+                {
+
+                    customerproduct.Price = updateCustomerProduct.Price; // Or use the date passed in if it should be set client-side
+                    customerproduct.Status = updateCustomerProduct.Status;
+
+                   // Save the changes to the database
+                    await _context.SaveChangesAsync();
+                    //UpdateOrder returnorder = OrderConverter.ConvertToUpdateOrder(order);
+                  
+                    // and the URL where the order can be accessed (e.g., Get Order by ID)
+                    return CreatedAtAction(nameof(GetCustomerProductByCustomerId), new { id = customerproduct.CustomerId }, customerproduct);
+                }
+                var customer = _context.TblCustomers.FirstOrDefault(o => o.CustId == updateCustomerProduct.CustId);
+                    
+                    if(customer != null)
+                    {
+                    customer.Address = updateCustomerProduct.Address;
+                    customer.Fullname = updateCustomerProduct.Fullname;
+                    customer.Tel    = updateCustomerProduct.Tel;
+                    await _context.SaveChangesAsync();
+                    return Ok ("Customer updated!");
+                }
+                
+                else return (null);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception if needed
+                return StatusCode(500, "An error occurred while creating the order.");
+            }
+        }
+
+        //------------------------------------Delete a CustomerProduct------------------------------------------//
+
+        [HttpDelete("DeleteCustomerProduct/{customerId}/{productId}")]
+        public async Task<IActionResult> DeleteCustomerProduct(string customerId, string productId)
+        {
+            var customerProduct = await _context.TblCustomerProducts
+                .FirstOrDefaultAsync(cp => cp.CustomerId == customerId && cp.ProductId == productId);
+
+            if (customerProduct == null)
+            {
+                return NotFound();
+            }
+
+            _context.TblCustomerProducts.Remove(customerProduct);
+            await _context.SaveChangesAsync();
+
+            return NoContent(); // Returns a 204 No Content response
+        }
+
+        [HttpGet("GetCustomerProductById/{custId}/{ProId}")]
+        public async Task<IActionResult> GetCustomerProductById(string custId, string ProId)
+        {
+            var customerproduct = await _context.TblCustomerProducts
+                                      .FirstOrDefaultAsync(cp => cp.CustomerId == custId && cp.ProductId == ProId);
+
+            if (customerproduct == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(customerproduct);
+        }
+
+        //-----------------------------------Get CustomerProductByDealer--------------------------------//
+        [HttpGet("GetCustomerProductByDealer")]
+        public ActionResult GetCustomerProductByDealer([FromQuery] string dealerId, [FromQuery] int page = 1, [FromQuery] int pageSize = 10)
+        {
+
+
+            var customerproducts = _context.TblCustomerProducts
+                     .Include(customerproducts => customerproducts.Product)
+                     .Where(customerproducts => customerproducts.Product.dealerId == dealerId)
+                     .ToList();
+
+            int totalCustomerProducts = customerproducts.Count();
+
+            // Calculate the total number of pages
+            var totalPages = (int)Math.Ceiling(totalCustomerProducts / (double)pageSize);
+
+            // Fetch the products for the requested page
+            var customerproductbydealer = customerproducts
+                                   .Skip((page - 1) * pageSize) // Skip the products from the previous pages
+                                   .Take(pageSize)              // Take the next 'pageSize' number of products
+                                   .ToList();                   // Execute the query and get the list of products
+
+            // Prepare the response
+            var response = new
+            {
+                TotalCustomerProducts = totalCustomerProducts,
+                TotalPages = totalPages,
+                CurrentPage = page,
+                PageSize = pageSize,
+                CustomerProducts = customerproductbydealer
+            };
+
+            return Ok(response);
+        }
+
+
+        //---------------------------------------------------------------------------------------------//
 
     }
     public static class OrderConverter
