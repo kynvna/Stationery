@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JInzG6+C6jrKk4uysCWcmXIEyS7H4Gg+PY3nf6BbRNigFNIUmgnFglICEsIZt+kBMQW4Z8pN8ZwBSG5Wi/R0Kg==",
+  "dgSpecHash": "Rdht//axWs+JwEhrsjFZvzG7IdzliYdfjpJmWTg7lVzMFW9LHpc/dg6Cg+63Su/NvtFlsc2px4GfZI/cP+1u8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MSI BRAVO 15\\Source\\Repos\\Stationery\\StationeryWEB\\StationeryWEB.csproj",
+  "projectFilePath": "C:\\C#\\Shopping_cart\\aKy\\StationeryWEB\\StationeryWEB.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MSI BRAVO 15\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

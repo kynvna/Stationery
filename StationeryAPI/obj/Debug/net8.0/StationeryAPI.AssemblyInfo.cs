@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StationeryAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cf9309b54717cb9e7b8beb6c5fca55a54937e22")]
 [assembly: System.Reflection.AssemblyProductAttribute("StationeryAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StationeryAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
