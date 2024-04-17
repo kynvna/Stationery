@@ -1,0 +1,132 @@
+﻿@* @model IEnumerable<WeatherForecast>
+
+@{
+    ViewData["Title"] = "Weather Forecast";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@foreach (var forecast in Model)
+{
+    <div class="weather-forecast">
+        <h3>@forecast.Date.ToShortDateString()</h3>
+        <p>Temperature: @forecast.TemperatureC&deg;C</p>
+        <p>Summary: @forecast.Summary</p>
+    </div>
+} *@
+@* @model IEnumerable<StationeryAPI.ShoppingModels.TblProduct>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Products</h2>
+@foreach (var item in Model)
+{
+    <div>@item.ProId</div>
+    <div>@item.ProName</div>
+
+}
+ *@
+
+@model ProductPageViewModel
+
+@{
+    ViewData["Title"] = "Admin's Product";
+    Layout = "~/Views/Shared/_DealerLayout.cshtml";
+}
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox">
+            <div class="ibox-head">
+                <div class="ibox-title">Danh sách sản phẩm upload bởi người bán</div>
+            </div>
+            <div class="ibox-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product ID</th>
+                                <th>Dealer ID</th>
+                                <th>Product Name</th>
+                                <th>Desc.</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Image</th>
+                                <th>Status</th>
+                                <th>Created at</th>
+                                <th>Updated at</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Products)
+                            {
+                                <tr>
+                                    <td>@item.ProId</td>
+                                    <td>@item.dealerId</td>
+                                    <td>@item.ProName</td>
+                                    <td>@item.Description</td>
+                                    <td>@item.Price</td>
+                                    <td>@item.ProQuantity</td>
+                                    <td><img src="@item.ImageLink" height="75" width="auto"/></td>
+                                    <td>@item.ProStatus</td>
+                                    <td>@item.TimeCreated</td>
+                                    <td>@item.TimeUpdated</td>
+                                    <td>
+                                        <button class="btn btn-danger btn-rounded">Delete</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    Page @Model.CurrentPage of @Model.TotalPages
+
+    @if (Model.CurrentPage > 1)
+    {
+        <button onclick="goToPage(@(Model.CurrentPage - 1))">Previous</button>
+    }
+
+    @if (Model.CurrentPage < Model.TotalPages)
+    {
+        <button type="button" onclick="goToPage(@(Model.CurrentPage + 1))">Next</button>
+    }
+</div>
+
+<script>
+    function goToPage(page) {
+        const url = new URL(window.location);
+        url.searchParams.set('page', page);
+        // Preserve the pageSize selection when navigating pages
+        const pageSize = document.querySelector('select[name="pageSize"]').value;
+        url.searchParams.set('pageSize', pageSize);
+        console.log(url.href);
+        window.location.href = url.href; // Navigate with the new query parameters.
+    }
+</script>
+
+<div>
+    @for (int i = 1; i <= Model.TotalPages; i++)
+    {
+        <button type="button" onclick="goToPage(@i)">@i</button>
+    }
+</div>
+
+<div>
+    <form method="get">
+        <label for="pageSize">Products per page:</label>
+        <select name="pageSize" onchange="this.form.submit()">
+            <option selected="selected" value="@Model.PageSize">@Model.PageSize</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+        </select>
+    </form>
+</div>
+

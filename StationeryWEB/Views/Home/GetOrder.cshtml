@@ -1,18 +1,27 @@
 ﻿@model StationeryAPI.ShoppingModels.TblOrder
-
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Get Order by ID and Display";
+    Layout = "~/Views/Shared/_DealerLayout.cshtml";
 }
 
-<h2>Orders</h2>
-
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox">
+            <div class="ibox-head">
+                <div class="ibox-title">Tra cứu đơn hàng</div>
+            </div>
+            <div class="ibox-body">
+                <form class="form-inline" id="GetOrderForm">
+                    <label class="sr-only" for="orderId">Đơn hàng cần tìm</label>
+                    <input class="form-control mb-2 mr-sm-2 mb-sm-0" type="text" id="orderId" placeholder="Nhập mã đơn">
+                    <button class="btn btn-success" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Search Form -->
-<form id="GetOrderForm">
-    <label for="orderId">Order ID:</label>
-    <input type="text" id="orderId" />
-    <button type="submit">Find Order</button>
-</form>
-
 <!-- Placeholder for Order Details -->
 <div id="orderResult"></div>
 
@@ -38,14 +47,41 @@
                     const order = await response.json(); // Parse JSON response into JavaScript object
                     // Update the 'orderResult' div with fetched order details
                     document.getElementById('orderResult').innerHTML = `
-                                <h3>Order Details:</h3>
-                                <div><strong>Order ID:</strong> ${order.orderId}</div>
-                                <div><strong>Customer ID:</strong> ${order.customerId}</div>
-                                <!-- Add more fields as necessary -->
+                                                   <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <div class="ibox">
+                                                            <div class="ibox-head">
+                                                                <div class="ibox-title">Kết quả tìm kiếm</div>
+                                                            </div>
+                                                            <div class="ibox-body">
+                                                                <table class="table">
+                                                                    <thead class="thead-default">
+                                                                        <tr>
+                                                                            <th>ID đơn hàng</th>
+                                                                            <th>Mã khách hàng</th>
+                                                                            <th colspan="2">Hành động</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                                    <td>${order.orderId}</td>
+                                                                                    <td>${order.customerId}</td>
+                                                                                    <td>
+                                                                                                <button class="btn btn-danger btn-rounded" onclick="deleteOrder('${order.orderId}');">Delete</button><br/>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                                                    <a href="/Home/UpdateOrder?id=${order.orderId}">Edit</a>
+                                                                                     </td>
 
-                                <!-- Direct Delete Button within Order Information -->
-                                <button onclick="deleteOrder('${order.orderId}');">Delete This Order</button>
-                            `;
+
+                                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                             </div>
+                                                    `;
                 }
             } catch (error) {
                 console.error('Error:', error);

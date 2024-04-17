@@ -11,13 +11,14 @@ public partial class TblCustomer
 
     public string? Address { get; set; }
 
-    public string? Username { get; set; }
+    public virtual ICollection<TblCustomerProduct> CustomerProducts { get; set; } = new List<TblCustomerProduct>();
 
-    public string? Passw { get; set; }
 
     public string? Tel { get; set; }
 
     public bool Active { get; set; }
+
+   // public virtual TblOrder Orders { get; set; }
 
     public virtual ICollection<TblCart> TblCarts { get; set; } = new List<TblCart>();
 

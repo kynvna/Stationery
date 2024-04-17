@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\Source\Stationery\StationeryWEB\bin\Debug\net8.0\appsettings.Development.json
 E:\Source\Stationery\StationeryWEB\bin\Debug\net8.0\appsettings.json
 E:\Source\Stationery\StationeryWEB\bin\Debug\net8.0\StationeryWEB.staticwebassets.runtime.json
@@ -103,3 +104,39 @@ C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.
 C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\StationeryWEB.genruntimeconfig.cache
 C:\DangVNH\Sem3-ACCP\Project_Azure\StationeryWEB\obj\Debug\net8.0\ref\StationeryWEB.dll
 >>>>>>> origin/dangvnh
+=======
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.csproj.AssemblyReference.cache
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.GeneratedMSBuildEditorConfig.editorconfig
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.AssemblyInfoInputs.cache
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.AssemblyInfo.cs
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.csproj.CoreCompileInputs.cache
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.MvcApplicationPartsAssemblyInfo.cache
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.RazorAssemblyInfo.cache
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.RazorAssemblyInfo.cs
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.sourcelink.json
+C:\SEM3\StationeryWEB\bin\Debug\net8.0\appsettings.Development.json
+C:\SEM3\StationeryWEB\bin\Debug\net8.0\appsettings.json
+C:\SEM3\StationeryWEB\bin\Debug\net8.0\StationeryWEB.staticwebassets.runtime.json
+C:\SEM3\StationeryWEB\bin\Debug\net8.0\StationeryWEB.exe
+C:\SEM3\StationeryWEB\bin\Debug\net8.0\StationeryWEB.deps.json
+C:\SEM3\StationeryWEB\bin\Debug\net8.0\StationeryWEB.runtimeconfig.json
+C:\SEM3\StationeryWEB\bin\Debug\net8.0\StationeryWEB.dll
+C:\SEM3\StationeryWEB\bin\Debug\net8.0\StationeryWEB.pdb
+C:\SEM3\StationeryWEB\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\staticwebassets.build.json
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\staticwebassets.development.json
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\staticwebassets\msbuild.StationeryWEB.Microsoft.AspNetCore.StaticWebAssets.props
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\staticwebassets\msbuild.build.StationeryWEB.props
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StationeryWEB.props
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StationeryWEB.props
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\staticwebassets.pack.json
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\scopedcss\bundle\StationeryWEB.styles.css
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\scopedcss\projectbundle\StationeryWEB.bundle.scp.css
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\Statione.72576C29.Up2Date
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.dll
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\refint\StationeryWEB.dll
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.pdb
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.genruntimeconfig.cache
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\ref\StationeryWEB.dll
+>>>>>>> origin/dangvnh1504

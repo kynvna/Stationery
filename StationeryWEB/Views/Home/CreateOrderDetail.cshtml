@@ -2,35 +2,50 @@
 
 @{
     ViewData["Title"] = "Create Order Detail";
+    Layout = "~/Views/Shared/_DealerLayout.cshtml";
 }
 
-<h2>Create Order Detail</h2>
+<div class="row">
+   <div class="col-md-8">
+        <div class="ibox">
+            <div class="ibox-body">
+                <form id="orderDetailForm">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="orderId">Mã đơn</label>
+                            <input class="form-control" type="text" id="orderId" name="orderId" required placeholder="Mã đơn">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="productId">Mã SP</label>
+                            <input class="form-control" type="text" id="productId" name="productId" placeholder="Mã sp" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="quantity">Số lượng</label>
+                            <input class="form-control" type="text" id="quantity" name="quantity"  required placeholder="Số lượng">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="discount">Giảm giá</label>
+                            <input class="form-control" type="number" id="discount" name="discount" required step="0.01" placeholder="Tổng giá" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="totalAmount">Tổng giá</label>
+                            <input class="form-control" type="number" id="totalAmount" name="totalAmount" required placeholder="Tổng giá" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-rounded" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+   </div>
+</div>
 
-<form id="orderDetailForm">
-    <div>
-        <label for="orderId">Order ID:</label>
-        <input type="text" id="orderId" name="orderId" required>
-    </div>
-    <div>
-        <label for="productId">Product ID:</label>
-        <input type="text" id="productId" name="productId" required>
-    </div>
-    <div>
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" required>
-    </div>
-    <div>
-        <label for="discount">Discount:</label>
-        <input type="number" id="discount" name="discount" step="0.01">
-    </div>
-    <div>
-        <label for="totalAmount">Total Amount:</label>
-        <input type="number" id="totalAmount" name="totalAmount" step="0.01">
-    </div>
-    <button type="submit">Submit Order Detail</button>
-</form>
 
-<div id="orderDetailResult"></div>
 
 @section Scripts {
     <script>

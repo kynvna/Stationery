@@ -17,6 +17,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+<<<<<<< HEAD
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
@@ -31,8 +32,9 @@ app.UseEndpoints(endpoints =>
 
 
 
+=======
+>>>>>>> origin/dangvnh1504
 app.UseAuthorization();
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

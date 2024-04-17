@@ -23,6 +23,9 @@ public partial class TblProduct
     public DateTime? TimeCreated { get; set; }
 
     public DateTime? TimeUpdated { get; set; }
+    public string? CatId { get; set; }
+
+    public virtual ICollection<TblCustomerProduct> CustomerProducts { get; set; } = new List<TblCustomerProduct>();
 
     public virtual ICollection<TblCartItem> TblCartItems { get; set; } = new List<TblCartItem>();
     public virtual ICollection<TblOrder> Orders { get; set; }
