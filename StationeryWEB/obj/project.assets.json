@@ -55,39 +55,23 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\Admin\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\HAI DANG\\.nuget\\packages\\": {},
->>>>>>> origin/dangvnh
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\Stationery\\StationeryWEB\\StationeryWEB.csproj",
+      "projectUniqueName": "C:\\C#\\Shopping_cart\\Dang\\StationeryWEB\\StationeryWEB.csproj",
       "projectName": "StationeryWEB",
-      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\Stationery\\StationeryWEB\\StationeryWEB.csproj",
+      "projectPath": "C:\\C#\\Shopping_cart\\Dang\\StationeryWEB\\StationeryWEB.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\Stationery\\StationeryWEB\\obj\\",
-=======
-      "projectUniqueName": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\StationeryWEB.csproj",
-      "projectName": "StationeryWEB",
-      "projectPath": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\StationeryWEB.csproj",
-      "packagesPath": "C:\\Users\\HAI DANG\\.nuget\\packages\\",
-      "outputPath": "C:\\DangVNH\\Sem3-ACCP\\Project_Azure\\StationeryWEB\\obj\\",
->>>>>>> origin/dangvnh
+      "outputPath": "C:\\C#\\Shopping_cart\\Dang\\StationeryWEB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\HAI DANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> origin/dangvnh
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -142,5 +126,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\C#\\Shopping_cart\\Dang\\StationeryWEB\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
