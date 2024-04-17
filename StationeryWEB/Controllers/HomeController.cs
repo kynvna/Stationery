@@ -329,12 +329,11 @@ namespace StationeryWEB.Controllers
         {
             var client = _clientFactory.CreateClient();
             string id = Request.Query["id"];
-            var response = await client.GetAsync($"https://localhost:7106/api/Customer/CreateOrderDetail");
+            var response = await client.GetAsync($"https://localhost:7106/api/Customer/GetOrderDetail/{id}");
             if (response.IsSuccessStatusCode)
             {
                 string responseData = await response.Content.ReadAsStringAsync();
                 var res = JsonConvert.DeserializeObject<UpdateDelivery>(responseData);
-                ViewBag.id = id;
                 return View(res);
             }
             else

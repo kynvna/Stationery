@@ -2,7 +2,7 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Get Order by ID and Display";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_DealerLayout.cshtml";
 }
 
 <div class="row">
@@ -59,7 +59,7 @@
                                                                 <tr>
                                                                     <th>ID đơn hàng</th>
                                                                     <th>Mã khách hàng</th>
-                                                                    <th colspan="2">Hành động</th>
+                                                                    <th colspan="3">Hành động</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -72,9 +72,9 @@
                                                                             <td>
                                                                                                             <a href="/Home/UpdateOrder?id=${order.orderId}">Edit</a>
                                                                              </td>
-                                                                                             <td> <a href="/Home/CreateOrderDetail?id=${order.orderId}">Create Detail</a></td>
-                                                                                                     
-                                                                        </tr>
+                                                                                       <td> <a href="/Home/CreateOrderDetail?id=${order.orderId}">Create Detail</a></td>
+
+                                                                                </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
