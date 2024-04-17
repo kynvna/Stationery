@@ -7,6 +7,8 @@ using StationeryAPI.ShoppingModels;
 using System.Text.Json;
 using System.Text;
 using System.Text.Json.Serialization;
+using System.Net.Http.Headers;
+using System.Globalization;
 
 
 namespace StationeryWEB.Controllers
@@ -123,8 +125,27 @@ namespace StationeryWEB.Controllers
 
         //----------------Update order by id -----------------------//
         [HttpGet]
-        public IActionResult UpdateOrder()
+        public async Task<IActionResult> UpdateOrder()
         {
+            
+            var client = _clientFactory.CreateClient();
+            string id = Request.Query["id"];
+            ViewBag.id = id;
+
+            var response = await client.GetAsync($"https://localhost:7106/api/Customer/GetOrder/{id}");
+            
+            if (response.IsSuccessStatusCode)
+            {
+                string responseData = await response.Content.ReadAsStringAsync();
+                var res = JsonConvert.DeserializeObject<UpdateOrder>(responseData);
+                // Now you can return the order object to your view or handle it as needed
+                return View(res);
+            }
+            else
+            {
+                // Handle null (deserialization failed or JSON is empty)
+                return View();
+            }
             return View(new UpdateOrder()); // Pass a new instance to the view for the form
         }
         public IActionResult AdminProfile()
@@ -142,6 +163,31 @@ namespace StationeryWEB.Controllers
         public IActionResult Register()
         {
             return View(); 
+        }
+        public async Task<IActionResult> loginUser(LoginModel model)
+        {
+            string webApiUrl = "https://localhost:7106/api/Dealer/login";
+            string json = JsonConvert.SerializeObject(model);
+            var httpClient = new HttpClient();
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await httpClient.PostAsync(webApiUrl, content);
+            if (response.IsSuccessStatusCode)
+            {
+                string responseData = await response.Content.ReadAsStringAsync();
+                LoginSuccess login = JsonConvert.DeserializeObject<LoginSuccess>(responseData);
+                if (login.role == 0)
+                {
+                    ViewBag.id = login.id;
+                    return Redirect("/Home/AdminProfile");
+                }
+                else
+                {
+                    return Redirect("/Home/DealerProfile");
+                }
+
+            }
+            return Redirect("/Home/Index");
         }
         [HttpPost]
         public async Task<IActionResult> UpdateOrder(UpdateOrder order)
@@ -279,8 +325,23 @@ namespace StationeryWEB.Controllers
         }
         //--------------------------------------------------------//
         [HttpGet]
-        public IActionResult CreateOrderDetail()
+        public async Task<IActionResult> CreateOrderDetail()
         {
+            var client = _clientFactory.CreateClient();
+            string id = Request.Query["id"];
+            var response = await client.GetAsync($"https://localhost:7106/api/Customer/CreateOrderDetail");
+            if (response.IsSuccessStatusCode)
+            {
+                string responseData = await response.Content.ReadAsStringAsync();
+                var res = JsonConvert.DeserializeObject<UpdateDelivery>(responseData);
+                ViewBag.id = id;
+                return View(res);
+            }
+            else
+            {
+                // Handle null (deserialization failed or JSON is empty)
+                return View();
+            }
             return View(new StationeryWEB.Models.OrderDetail()); // Pass a new instance to the view for the form
         }
 
@@ -374,9 +435,25 @@ namespace StationeryWEB.Controllers
       
         //--------------------------Update delivery          -----------------------------//
         [HttpGet]
-        public IActionResult UpdateDelivery()
+        public async Task<IActionResult> UpdateDeliveryAsync()
         {
-            return View(new UpdateDelivery()); // Pass a new instance to the view for the form
+            var client = _clientFactory.CreateClient();
+            string id = Request.Query["id"];
+            ViewBag.id = id;
+
+            var response = await client.GetAsync($"https://localhost:7106/api/Customer/GetDelivery/{id}");
+
+            if (response.IsSuccessStatusCode)
+            {
+                string responseData = await response.Content.ReadAsStringAsync();
+                var res = JsonConvert.DeserializeObject<UpdateDelivery>(responseData);
+                return View(res);
+            }
+            else
+            {
+                // Handle null (deserialization failed or JSON is empty)
+                return View();
+            }
         }
 
 

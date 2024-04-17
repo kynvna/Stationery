@@ -212,6 +212,25 @@
                             <li>
                                 <a asp-action="CreateOrder" asp-controller="Home">Tạo đơn hàng</a>
                             </li>
+                            <li>
+                                <a asp-area="" asp-controller="Home" asp-action="GetOrder">Chỉnh sửa đơn</a>
+                            </li>
+                            <li>
+                                <a asp-action="DeliveriesByDealer" asp-controller="Home">Tra cứu theo dealer</a>
+                            </li>
+                        </ul>
+                        <ul class="nav-2-level collapse">
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="sidebar-item-icon fa fa-table"></i>
+                                    <span class="nav-label">Sản phẩm</span><i class="fa fa-angle-left arrow"></i>
+                                </a>
+                                <ul class="nav-2-level collapse">
+                                    <li>
+                                        <a asp-area="" asp-controller="Home" asp-action="AdminIndex">DS sản phẩm</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>

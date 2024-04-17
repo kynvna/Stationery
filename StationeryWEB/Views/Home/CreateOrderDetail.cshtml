@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Create Order Detail";
+    Layout = "~/Views/Shared/_DealerLayout.cshtml";
 }
 
 <h2>Create Order Detail</h2>
@@ -9,7 +10,7 @@
 <form id="orderDetailForm">
     <div>
         <label for="orderId">Order ID:</label>
-        <input type="text" id="orderId" name="orderId" required>
+        <input type="text" id="orderId" name="orderId" value="@ViewBag.id" required>
     </div>
     <div>
         <label for="productId">Product ID:</label>

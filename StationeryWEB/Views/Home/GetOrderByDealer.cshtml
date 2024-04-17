@@ -52,6 +52,7 @@
                                     <td>@item.OrderDate.ToString("yyyy-MM-dd HH:mm:ss")</td>
                                     <td>@item.TotalPrice</td>
                                     <td>@item.OrderStatus</td>
+                                    <td> <a href="/Home/UpdateOrder?id=@item.OrderId">Edit</a></td>
                                 </tr>
                             }
                         }

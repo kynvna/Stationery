@@ -41,7 +41,7 @@
 
                 if (!response.ok) {
                     // Handle response errors
-                    document.getElementById('deliveryResult').textContent = 'Failed to fetch order: ' + await response.text();
+                    document.getElementById('deliveryResult').textContent = 'Failed to fetch delivery: ' + await response.text();
                 } else {
                     const delivery = await response.json(); // Parse JSON response into JavaScript object
                     // Update the 'orderResult' div with fetched order details
@@ -103,7 +103,7 @@
                     }
                 } catch (error) {
                     console.error('Error:', error);
-                    alert('An error occurred while deleting the order.');
+                    alert('An error occurred while deleting the order.' + error);
                 }
             }
         }

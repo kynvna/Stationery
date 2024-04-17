@@ -15,34 +15,34 @@
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="deliveryId">Mã vận đơn</label>
-                            <input class="form-control" type="text" id="deliveryId" name="deliveryId" required placeholder="Mã vận đơn">
+                            <input class="form-control" type="text" id="deliveryId" name="deliveryId" value="@Model.DeliveryId" readonly required placeholder="Mã vận đơn">
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="orderId">Mã đơn</label>
-                            <input class="form-control" type="text" id="orderId" name="orderId" placeholder="Mã đơn hàng" required>
+                            <input class="form-control" type="text" id="orderId" name="orderId" value="@Model.OrderId" readonly placeholder="Mã đơn hàng" required>
                         </div>
                     </div>
                     <div class="form-group" id="date_3">
                         <label class="font-normal" for="deliveryDate">Ngày giao</label>
                         <div class="input-group date">
                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                            <input class="form-control" type="date" id="deliveryDate" name="deliveryDate" required>
+                            <input class="form-control" type="date" id="deliveryDate" value="@Model.DeliveryDate.ToString("yyyy-MM-dd")" name="deliveryDate" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="deliveryStatus">Trạng thái</label>
-                            <input class="form-control" type="text" id="deliveryStatus" name="deliveryStatus" required placeholder="Trạng thái">
+                            <input class="form-control" type="text" id="deliveryStatus" value="@Model.DeliveryStatus" name="deliveryStatus" required placeholder="Trạng thái">
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="deliveryFee">Phí giao hàng</label>
-                            <input class="form-control" type="number" id="deliveryFee" name="deliveryFee" required step="0.01" placeholder="Tổng giá" />
+                            <input class="form-control" type="number" id="deliveryFee" value="@Model.DeliveryFee" name="deliveryFee" required step="0.01" placeholder="Tổng giá" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 form-group">
                             <label for="carrierName">Carrier Name:</label>
-                            <input class="form-control" type="text" id="carrierName" name="carrierName" required placeholder="Người giao hàng" />
+                            <input class="form-control" type="text" id="carrierName" value="@Model.CarrierName" name="carrierName" required placeholder="Người giao hàng" />
                         </div>
                     </div>
                     <div class="form-group">
@@ -53,7 +53,14 @@
         </div>
     </div>
     <div class="col-md-6">
-        <div id="deliveryResult"></div>
+        <div class="ibox">
+            <div class="ibox-head">
+                <div class="ibox-title">Đơn hàng sau khi cập nhật</div>
+            </div>
+            <div class="ibox-body">
+                <div id="deliveryResult"></div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -95,6 +102,7 @@
 
                     // Here is where you place the code to update the 'orderResult' div
                     document.getElementById('deliveryResult').innerHTML = `
+                    
                                                                                  <form id="updatedeliveryForm">
               <div class="row">
                   <div class="col-sm-6 form-group">

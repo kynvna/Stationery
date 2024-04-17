@@ -1,4 +1,4 @@
-﻿@*
+﻿﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @model StationeryAPI.ShoppingModels.NewOrder
@@ -7,11 +7,6 @@
     ViewData["Title"] = "Create Order";
     Layout = "~/Views/Shared/_DealerLayout.cshtml";
 }
-<div class="row">
-    <div class="col-md-12">
-        <a asp-area="" asp-controller="Home" asp-action="CreateOrderDetail">Tạo chi tiết đơn hàng</a>
-    </div>
-</div>
 <div class="row">
     <div class="col-md-12">
         <div class="ibox">
@@ -60,15 +55,22 @@
                             <input class="form-control" type="text" id="paymentStatus" name="paymentStatus" required placeholder="Trạng thái thanh toán">
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                           <button class="btn btn-success" type="submit">Submit</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
     <div class="col-md-12">
         <div class="ibox">
-            <div id="orderResult"></div>
+           <div class="ibox-body">
+                <div id="orderResult"></div>
+           </div>
         </div>
-        
+
     </div>
 </div>
 @section Scripts {
@@ -108,51 +110,37 @@
 
                     // Here is where you place the code to update the 'orderResult' div
                     document.getElementById('orderResult').innerHTML = `
-                                                                  <form id="orderForm">
-              <div class="row">
-                  <div class="col-sm-6 form-group">
-                      <label for="customerId">ID Khách Hàng:</label>
-                      <input class="form-control" type="text" id="customerId" name="customerId" value="${createdOrder.customerId}" readonly required placeholder="ID Khách">
-                  </div>
-                  <div class="form-group col-sm-6">
-                      <label for="productId">ID Sản Phẩm</label>
-                      <input class="form-control" type="text" id="productId" name="productId" value="${createdOrder.totalPrice.toFixed(2)}" readonly required placeholder="Mã sản phẩm">
-                  </div>
-              </div>
-            <div class="row">
-                  <div class="col-sm-6 form-group">
-                      <label for="totalPrice">Tổng giá/label>
-                      <input class="form-control" type="number" id="totalPrice" name="totalPrice" value="${createdOrder.orderStatus}" readonly required step="0.01" placeholder="Tổng giá">
-                  </div>
-                  <div class="form-group col-sm-6">
-                      <label for="orderStatus">Trạng thái đơn hàng</label>
-                      <input class="form-control" type="text" id="orderStatus" name="orderStatus" value="${new Date(createdOrder.orderDate).toLocaleString()}" readonly required placeholder="Trạng thái đơn hàng">
-                  </div>
-              </div>
-            <div class="row">
-                  <div class="col-sm-6 form-group">
-                      <label for="deliveryType">Phương thức giao hàng</label>
-                      <input class="form-control" type="text" id="deliveryType" name="deliveryType" value="${createdOrder.deliveryType}" readonly required placeholder="Phương thức giao hàng">
-                  </div>
-                  <div class="form-group col-sm-6">
-                      <label for="deliveryFee">Phí giao hàng</label>
-                      <input class="form-control" type="number" id="deliveryFee" name="deliveryFee" value="${createdOrder.paymentFee}" readonly required step="0.01" placeholder="Phí giao hàng">
-                  </div>
-              </div>
-            <div class="row">
-                  <div class="col-sm-6 form-group">
-                      <label for="paymentMethod">Phương thức thanh toán</label>
-                      <input class="form-control" type="text" id="paymentMethod" name="paymentMethod" value="${createdOrder.paymentMethod}" readonly required placeholder="Phương thức thanh toán">
-                  </div>
-                  <div class="form-group col-sm-6">
-                      <label for="paymentStatus">Trạng thái thanh toán</label>
-                      <input class="form-control" type="text" id="paymentStatus" name="paymentStatus" value="${createdOrder.paymentStatus}" readonly required placeholder="Trạng thái thanh toán">
-                  </div>
-              </div>
-        </form>
+                                                                          <form id="orderForm">
+                      <div class="row">
+                          <div class="col-sm-12 form-group">
+                              <label for="customerId">ID Khách Hàng:</label>
+                              <input class="form-control" type="text" id="customerId" name="customerId" value="${createdOrder.customerId}" readonly required placeholder="ID Khách">
+                          </div>
+                      </div>
+                    <div class="row">
+                          <div class="form-group col-sm-6">
+                              <label for="orderStatus">Thời gian đặt hàng</label>
+                              <input class="form-control" type="text" id="orderStatus" name="orderStatus" value="${new Date(createdOrder.orderDate).toLocaleString()}" readonly required placeholder="Trạng thái đơn hàng">
+                          </div>
+                                  <div class="col-sm-6 form-group">
+                                      <label for="deliveryType">Phương thức giao hàng</label>
+                                      <input class="form-control" type="text" id="deliveryType" name="deliveryType" value="${createdOrder.deliveryType}" readonly required placeholder="Phương thức giao hàng">
+                                  </div>
+                      </div>
+                    <div class="row">
+                          <div class="col-sm-6 form-group">
+                              <label for="paymentMethod">Phương thức thanh toán</label>
+                              <input class="form-control" type="text" id="paymentMethod" name="paymentMethod" value="${createdOrder.paymentMethod}" readonly required placeholder="Phương thức thanh toán">
+                          </div>
+                          <div class="form-group col-sm-6">
+                              <label for="paymentStatus">Trạng thái thanh toán</label>
+                              <input class="form-control" type="text" id="paymentStatus" name="paymentStatus" value="${createdOrder.paymentStatus}" readonly required placeholder="Trạng thái thanh toán">
+                          </div>
+                      </div>
+                </form>
 
 
-                                                    `;
+                                                            `;
                 }
             } catch (error) {
                 console.error('Error:', error);
@@ -161,5 +149,3 @@
         });
     </script>
 }
-
-

@@ -6,7 +6,7 @@
 
         public string OrderId { get; set; } = null!;
 
-        public DateTime? DeliveryDate { get; set; }
+        public DateTime DeliveryDate { get; set; }
 
         public string DeliveryStatus { get; set; } = null!;
 

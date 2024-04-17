@@ -1,4 +1,6 @@
 ﻿@model StationeryWEB.Models.UpdateOrder
+
+
 @{
     ViewData["Title"] = "Update Order";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -14,53 +16,53 @@
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="orderId">Mã đơn hàng</label>
-                            <input class="form-control" type="text" id="orderId" name="orderId" required placeholder="Mã đơn hàng">
+                            <input class="form-control" type="text" id="orderId" name="orderId" readonly value="@Model.OrderId" required placeholder="Mã đơn hàng">
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="customerId">ID Khách hàng</label>
-                            <input class="form-control" type="text" id="customerId" name="customerId" placeholder="ID khách hàng" required>
+                            <input class="form-control" type="text" id="customerId" name="customerId" readonly value="@Model.CustomerId" placeholder="ID khách hàng" required>
                         </div>
                     </div>
                     <div class="form-group" id="date_3">
                         <label class="font-normal" for="orderDate">Ngày đặt</label>
                         <div class="input-group date">
                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                            <input class="form-control" type="date" id="orderDate" name="orderDate" required>
+                            <input class="form-control" type="date" id="orderDate" value="@Model.OrderDate.ToString("yyyy-MM-dd")" name="orderDate" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="productId">ID sản phẩm</label>
-                            <input class="form-control" type="text" id="productId" name="productId" required placeholder="ID sản phẩm">
+                            <input class="form-control" type="text" id="productId" value="@Model.productId" name="productId" required placeholder="ID sản phẩm">
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="totalPrice">Giá đơn</label>
-                            <input class="form-control" type="number" id="totalPrice" name="totalPrice" required step="0.01" placeholder="Tổng giá" />
+                            <input class="form-control" type="number" id="totalPrice" name="totalPrice" value="@Model.TotalPrice" required step="0.01" placeholder="Tổng giá" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="orderStatus">Order Status</label>
-                            <input class="form-control" type="text" id="orderStatus" name="orderStatus" required placeholder="Trạng thái đơn" />
+                            <input class="form-control" type="text" id="orderStatus" name="orderStatus" value="@Model.OrderStatus" required placeholder="Trạng thái đơn" />
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="DeliveryType">Delivery Type</label>
-                            <input class="form-control" type="text" id="deliveryType" name="deliveryType" required placeholder="Đơn vị giao" />
+                            <input class="form-control" type="text" id="deliveryType" name="deliveryType" value="@Model.DeliveryType" required placeholder="Đơn vị giao" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
                             <label for="DeliveryFee">Delivery Fee</label>
-                            <input class="form-control" type="number" id="deliveryFee" name="deliveryFee" required step="0.01" placeholder="Phí giao hàng" />
+                            <input class="form-control" type="number" id="deliveryFee" name="deliveryFee" value="@Model.DeliveryFee" required step="0.01" placeholder="Phí giao hàng" />
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="paymentMethod">Payment Method</label>
-                            <input class="form-control" type="text" id="paymentMethod" name="paymentMethod" required placeholder="Phương thức trả" />
+                            <input class="form-control" type="text" id="paymentMethod" name="paymentMethod" value="@Model.PaymentMethod" required placeholder="Phương thức trả" />
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="paymentStatus">Payment Status</label>
-                        <input class="form-control" type="text" id="paymentStatus" name="paymentStatus" required placeholder="Trạng thái" />
+                        <input class="form-control" type="text" id="paymentStatus" name="paymentStatus" value="@Model.PaymentStatus" required placeholder="Trạng thái" />
                     </div>
                     <div class="form-group">
                         <button class="btn btn-success btn-rounded" type="submit">Submit</button>

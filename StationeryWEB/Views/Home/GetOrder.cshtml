@@ -47,44 +47,41 @@
                     const order = await response.json(); // Parse JSON response into JavaScript object
                     // Update the 'orderResult' div with fetched order details
                     document.getElementById('orderResult').innerHTML = `
-                                   <div class="row">
-                                    <div class="col-xl-12">
-                                        <div class="ibox">
-                                            <div class="ibox-head">
-                                                <div class="ibox-title">Kết quả tìm kiếm</div>
-                                            </div>
-                                            <div class="ibox-body">
-                                                <table class="table">
-                                                    <thead class="thead-default">
-                                                        <tr>
-                                                            <th>ID đơn hàng</th>
-                                                            <th>Mã khách hàng</th>
-                                                            <th colspan="2">Hành động</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                                    <td>${order.orderId}</td>
-                                                                    <td>${order.customerId}</td>
-                                                                    <td>
-                                                                                <button class="btn btn-danger btn-rounded" onclick="deleteOrder('${order.orderId}');">Delete</button><br/>
-                                                                    </td>
-                                                                    <td>
-                                                                                    
-                                                                                    <form method="get" class="form-inline" action="/Home/UpdateOrder">
-                                                                                        <input type="hidden" id="updateId" value="${order.orderId}">
-                                                                                        <input type="hidden" id="updateCusID" value="${order.customerId}">
-                                                                                        <button class="btn btn-success btn-rounded" type="submit">Chỉnh sửa</button>
-                                                                                    </form>
-                                                                     </td>
+                                           <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="ibox">
+                                                    <div class="ibox-head">
+                                                        <div class="ibox-title">Kết quả tìm kiếm</div>
+                                                    </div>
+                                                    <div class="ibox-body">
+                                                        <table class="table">
+                                                            <thead class="thead-default">
+                                                                <tr>
+                                                                    <th>ID đơn hàng</th>
+                                                                    <th>Mã khách hàng</th>
+                                                                    <th colspan="2">Hành động</th>
                                                                 </tr>
-                                                    </tbody>
-                                                </table>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                            <td>${order.orderId}</td>
+                                                                            <td>${order.customerId}</td>
+                                                                            <td>
+                                                                                        <button class="btn btn-danger btn-rounded" onclick="deleteOrder('${order.orderId}');">Delete</button><br/>
+                                                                            </td>
+                                                                            <td>
+                                                                                                            <a href="/Home/UpdateOrder?id=${order.orderId}">Edit</a>
+                                                                             </td>
+                                                                                             <td> <a href="/Home/CreateOrderDetail?id=${order.orderId}">Create Detail</a></td>
+                                                                                                     
+                                                                        </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                             </div>
-                                    `;
+                                     </div>
+                                            `;
                 }
             } catch (error) {
                 console.error('Error:', error);
