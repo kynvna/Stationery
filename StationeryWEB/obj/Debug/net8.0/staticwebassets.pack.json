@@ -5,17 +5,8 @@
       "PackagePath": "staticwebassets\\StationeryWEB.bundle.scp.css"
     },
     {
-<<<<<<< HEAD
       "Id": "C:\\SEM3\\StationeryWEB\\wwwroot\\assets\\css\\main.css",
       "PackagePath": "staticwebassets\\assets\\css\\main.css"
-=======
-      "Id": "E:\\Source\\Stationery\\StationeryWEB\\wwwroot\\assets\\grape.jpg",
-      "PackagePath": "staticwebassets\\assets\\grape.jpg"
-    },
-    {
-      "Id": "E:\\Source\\Stationery\\StationeryWEB\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
->>>>>>> origin/Ky
     },
     {
       "Id": "C:\\SEM3\\StationeryWEB\\wwwroot\\assets\\css\\main.min.css",
@@ -128,6 +119,10 @@
     {
       "Id": "C:\\SEM3\\StationeryWEB\\wwwroot\\assets\\demo\\test-file.txt",
       "PackagePath": "staticwebassets\\assets\\demo\\test-file.txt"
+    },
+    {
+      "Id": "C:\\SEM3\\StationeryWEB\\wwwroot\\assets\\grape.jpg",
+      "PackagePath": "staticwebassets\\assets\\grape.jpg"
     },
     {
       "Id": "C:\\SEM3\\StationeryWEB\\wwwroot\\assets\\img\\404.png",

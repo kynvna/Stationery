@@ -502,6 +502,9 @@ namespace StationeryWEB.Controllers
             }
         }
 
+
+
+
         //-----------------------------Get all customerproduct--------------------------------//
 
         public async Task<IActionResult> GetCustomerProduct(int page = 1, int pageSize = 10)
@@ -517,7 +520,6 @@ namespace StationeryWEB.Controllers
 
 
             }
-
             return View("Error");
         }
 

@@ -3,57 +3,6 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h2>@ViewData["Title"]</h2>
-
-@foreach (var forecast in Model)
-{
-    <div class="weather-forecast">
-        <h3>@forecast.Date.ToShortDateString()</h3>
-        <p>Temperature: @forecast.TemperatureC&deg;C</p>
-        <p>Summary: @forecast.Summary</p>
-    </div>
-} *@
-@* @model IEnumerable<StationeryAPI.ShoppingModels.TblProduct>
-
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h2>Products</h2>
-@foreach (var item in Model)
-{
-    <div>@item.ProId</div>
-    <div>@item.ProName</div>
-
-}
- *@
-
-@model ProductPageViewModel
-
-            .product button:hover {
-                background-color: #0056b3; /* Darker shade on hover */
-            }
-
-    .clear {
-        clear: both; /* Clear float */
-    }
-</style>
-
-@foreach (var item in Model.Products)
-{
-    <div class="product">
-        <img src="/assets/grape.jpg" alt="@item.ProName" />
-        @* <div>@item.ProId</div> *@
-        @* <div>@item.ProName</div> *@
-        <div>@item.Description</div>
-        <div>@item.Price</div>
-        <button onclick="location.href='@Url.Action("RegisterProductById", "Home", new { id = item.ProId })'">Order Now</button>
-    </div>
-}
-@{
-    ViewData["Title"] = "Index";
-}
 <div class="row">
     @foreach (var item in Model.Products)
     {
@@ -61,12 +10,11 @@
             <div class="product_box">
                 <h4 class="bursh_text">@item.ProName</h4>
                 <p class="lorem_text">@item.Description - Seller: <strong>@item.dealerId</strong></p>
-                <img src="@item.ImageLink" class="image_1">
+                <img src="@item.ImageLink" class="image_1" alt="@item.ProName">
                 <div class="btn_main">
                     <div class="buy_bt">
                         <ul>
-                            <li class="active"><a href="#">Buy Now</a></li>
-                            <li class="active"><a href="#">Buy Now</a></li>
+                            <button class="btn btn-info btn-rounded" onclick="location.href='@Url.Action("RegisterProductById", "Home", new { id = item.ProId })'">Order Now</button>
                         </ul>
                     </div>
                     <h3 class="price_text">@item.Price</h3>
