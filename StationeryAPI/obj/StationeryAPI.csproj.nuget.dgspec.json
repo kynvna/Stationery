@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\C#\\Shopping_cart\\Dang\\StationeryAPI\\StationeryAPI.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\abc\\StationeryAPI\\StationeryAPI.csproj": {}
   },
   "projects": {
-    "C:\\C#\\Shopping_cart\\Dang\\StationeryAPI\\StationeryAPI.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\abc\\StationeryAPI\\StationeryAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\C#\\Shopping_cart\\Dang\\StationeryAPI\\StationeryAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\abc\\StationeryAPI\\StationeryAPI.csproj",
         "projectName": "StationeryAPI",
-        "projectPath": "C:\\C#\\Shopping_cart\\Dang\\StationeryAPI\\StationeryAPI.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\abc\\StationeryAPI\\StationeryAPI.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\C#\\Shopping_cart\\Dang\\StationeryAPI\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\abc\\StationeryAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

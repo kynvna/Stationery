@@ -9,155 +9,155 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StationeryWEB
 build_property.RootNamespace = StationeryWEB
-build_property.ProjectDir = C:\C#\Shopping_cart\Dang\StationeryWEB\
+build_property.ProjectDir = C:\Users\Admin\source\repos\abc\StationeryWEB\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\C#\Shopping_cart\Dang\StationeryWEB
+build_property.MSBuildProjectDirectory = C:\Users\Admin\source\repos\abc\StationeryWEB
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/Admin.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/AdminDealerView.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/AdminDealerView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbkRlYWxlclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/AdminIndex.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/AdminIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbkluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/AdminProfile.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/AdminProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pblByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/AdminUserView.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/AdminUserView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pblVzZXJWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/CreateCustomerProduct.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/CreateCustomerProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVDdXN0b21lclByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/CreateOrder.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/CreateOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/CreateOrderDetail.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/CreateOrderDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVPcmRlckRldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/Dealer.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/Dealer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWFsZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/DealerProfile.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/DealerProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWFsZXJQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/Deliveries.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/Deliveries.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxpdmVyaWVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/DeliveriesByDealer.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/DeliveriesByDealer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxpdmVyaWVzQnlEZWFsZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/GetCustomerProduct.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/GetCustomerProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRDdXN0b21lclByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/GetCustomerProductByDealer.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/GetCustomerProductByDealer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRDdXN0b21lclByb2R1Y3RCeURlYWxlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/GetCustomerProductById.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/GetCustomerProductById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRDdXN0b21lclByb2R1Y3RCeUlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/GetDelivery.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/GetDelivery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXREZWxpdmVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/GetOrder.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/GetOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/GetOrderByDealer.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/GetOrderByDealer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHZXRPcmRlckJ5RGVhbGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/Index.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/ItemDetails.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/ItemDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJdGVtRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/Login.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/LoginAdmin.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/LoginAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbkFkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/LoginDealer.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/LoginDealer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbkRlYWxlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/LoginUser.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/LoginUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/Register.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/UpdateCustomerProduct.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/UpdateCustomerProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVDdXN0b21lclByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/UpdateDelivery.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/UpdateDelivery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVEZWxpdmVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/UpdateOrder.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/UpdateOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Home/User.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Home/User.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Shared/Error.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Shared/_DealerLayout.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Shared/_DealerLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EZWFsZXJMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/_ViewImports.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/_ViewStart.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/C\#/Shopping_cart/Dang/StationeryWEB/Views/Shared/_Layout.cshtml]
+[C:/Users/Admin/source/repos/abc/StationeryWEB/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1c40z5zssq

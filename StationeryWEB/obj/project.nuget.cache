@@ -1,17 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iW7u8uDeo0eEs6uXh2phRjKlOTCAQUhbvDvsy4DFX4SvF7+rGUj2ZwMoGBCI5PK06Dj6z7vvHasNwGkS9evz3Q==",
+  "dgSpecHash": "UmswIHR2+3pu6+yVHerM65oVn8jkBKASYFlcbuQ8yq7oxc/4cRm5HAcBl53+Lxt+PlTxGAWnpcv1tzenO3C0SQ==",
   "success": true,
-  "projectFilePath": "C:\\C#\\Shopping_cart\\Dang\\StationeryWEB\\StationeryWEB.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\abc\\StationeryWEB\\StationeryWEB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\C#\\Shopping_cart\\Dang\\StationeryWEB\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
