@@ -2,29 +2,49 @@
 
 @{
     ViewData["Title"] = "Get CustomerProduct by Dealer";
+    Layout = "~/Views/Shared/_DealerLayout.cshtml";
 }
-
-<h2>CustomerProducts</h2>
-
-<!-- Simplified Filter Form -->
-<form method="post" id="GetCustomerProductByDealer">
-    <label for="dealerId">Dealer ID:</label>
-    <input type="text" name="dealerId" id="dealerId" />
-    <button type="submit">Filter</button>
-</form>
-
 @if (Model.CustomerProducts != null)
 {
-    foreach (var item in Model.CustomerProducts)
-    {
-        <div>
-            <h3>Customer ID: @item.CustomerId</h3>
-            <p>Product ID: @item.ProductId</p>
-            <p>Status: @item.Status</p>
-            <p>Price: @item.Price</p>
-          
+    <div class="row">
+        <div class="col-md-12">
+            <div class="ibox">
+                <div class="ibox-head">
+                    <form method="post" id="GetCustomerProductByDealer">
+                        <button class="btn btn-success btn-rounded" type="submit">Tải danh sách offer giá từ khách</button>
+                    </form>
+                </div>
+                <div class="ibox-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID Khách</th>
+                                    <th>ID Sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Trạng thái</th>
+                                    <th>Tạo đơn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.CustomerProducts)
+                                {
+                                    <tr>
+                                        <td>@item.CustomerId</td>
+                                        <td>@item.ProductId</td>
+                                        <td>@item.Price</td>
+                                        <td>@item.Status</td>
+                                        <td><a class="btn btn-info btn-rounded" href="/Home/CreateOrderFromProduct?cusid=@item.CustomerId&proid=@item.ProductId&price=@item.Price&status=@item.Status">Tạo đơn cho khách này</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-    }
+    </div>
+
 }
 else
 {

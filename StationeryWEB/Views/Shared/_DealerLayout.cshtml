@@ -207,31 +207,26 @@
                         </a>
                         <ul class="nav-2-level collapse">
                             <li>
-                                <a asp-action="Deliveries" asp-controller="Home">Giao hàng</a>
+                                <a asp-action="DeliveriesByDealer" asp-controller="Home">DS giao hàng</a>
                             </li>
                             <li>
-                                <a asp-action="CreateOrder" asp-controller="Home">Tạo đơn hàng</a>
+                                <a asp-area="" asp-controller="Home" asp-action="GetOrderByDealer">Các đơn hàng</a>
                             </li>
                             <li>
-                                <a asp-area="" asp-controller="Home" asp-action="GetOrder">Chỉnh sửa đơn</a>
+                                <a asp-action="GetCustomerProductByDealer" asp-controller="Home">Danh sách offer đang chờ</a>
                             </li>
-                            <li>
-                                <a asp-action="DeliveriesByDealer" asp-controller="Home">Tra cứu theo dealer</a>
-                            </li>
+
                         </ul>
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <i class="sidebar-item-icon fa fa-edit"></i>
+                            <i class="sidebar-item-icon fa fa-table"></i>
                             <span class="nav-label">Sản phẩm</span><i class="fa fa-angle-left arrow"></i>
                         </a>
                         <ul class="nav-2-level collapse">
                             <li>
-                                <a asp-area="" asp-controller="Home" asp-action="AdminIndex">DS sản phẩm</a>
+                                <a asp-area="" asp-controller="Home" asp-action="GetProductByDealer">DS sản phẩm</a>
                             </li>
-                    </li>
-                    <li>
-                        
                         </ul>
                     </li>
                 </ul>
@@ -423,6 +418,9 @@
     <!-- PAGE LEVEL SCRIPTS-->
     <script src="/assets/js/scripts/dashboard_1_demo.js" type="text/javascript"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        string x = Context.Session.GetString("dealerid");
+    </script>
 </body>
 
 </html>

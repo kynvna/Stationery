@@ -1,0 +1,31 @@
+﻿@model StationeryAPI.ShoppingModels.TblProduct
+@{
+    Layout = "~/Views/Shared/_SingleLayout.cshtml";
+}
+<div class="row">
+    <div class="col-lg-4 col-sm-6">
+    </div>
+    <div class="col-lg-4 col-sm-6">
+        <div class="product_box">
+            <h4 class="bursh_text">@Model.ProName</h4>
+            <p class="lorem_text">@Model.Description</p>
+            <img src="@Model.ImageLink" class="image_1" style="height: auto ;width: 1000px;">
+            <div class="btn_main">
+                <div class="buy_bt">
+                    <ul>
+                        <li class="active" style="color: yellow;"><i class="fa fa-money"></i><strong style="color: white;"> Retail Price: </strong>@Model.Price</li>
+                        <li class="active" style="color: yellow;"><i class="fa fa-user"></i><strong style="color: white;"> Dealer ID: </strong>@Model.dealerId</li>
+                        <li class="active" style="color: yellow;"><i class="fa fa-calendar"></i><strong style="color: white;"> Time created: </strong>@Model.TimeCreated</li>
+                        <li class="active" style="color: yellow;"><i class="fa fa-calendar"></i><strong style="color: white;"> Time updated: </strong>@Model.TimeUpdated</li>
+                    </ul>
+                    <br />
+                    <ul>
+                        <li><a href="/Home/CreateCustomerProduct?proid=@Model.ProId&price=@Model.Price">Đặt mua ngay</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+    </div>
+</div>

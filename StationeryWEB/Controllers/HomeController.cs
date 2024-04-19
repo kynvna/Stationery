@@ -27,7 +27,7 @@ namespace StationeryWEB.Controllers
 
         
 
-        public async Task<IActionResult> Index(int page = 1, int pageSize = 10)
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 8)
         {
             var client = _clientFactory.CreateClient();
             var response = await client.GetAsync($"https://localhost:7106/api/Customer/GetProducts?page={page}&pageSize={pageSize}");
@@ -56,13 +56,56 @@ namespace StationeryWEB.Controllers
 
             return View("Error");
         }
+        public async Task<IActionResult> GetProductByDealer(string? dealerId,int page = 1, int pageSize = 4)
+        {
+            var client = _clientFactory.CreateClient();
+            string dealerid = HttpContext.Session.GetString("dealerid");
+            var url = $"https://localhost:7106/api/Dealer/getproductbydealer?id={dealerid}&page={page}&pageSize={pageSize}";
+
+            // Append deaId to the URL if it's not null, using HttpUtility.UrlEncode for URL encoding
+            if (dealerId != null)
+            {
+                url += $"&dealerId={System.Net.WebUtility.UrlEncode(dealerId)}";
+            }
+
+            var response = await client.GetAsync(url);
+
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonString = await response.Content.ReadAsStringAsync();
+                try
+                {
+                    var orders = JsonConvert.DeserializeObject<ProductPageViewModel>(jsonString);
+                    return View(orders);
+                }
+                catch (JsonSerializationException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    // Handle the exception, possibly log it, and return an error view
+                    return View("Error");
+                }
+            }
+
+            return View("Error");
+        }
         //-------------------create new order----------------------//
         [HttpGet]
         public IActionResult CreateOrder()
         {
             return View(new NewOrder()); // Pass a new instance to the view for the form
         }
-
+        public IActionResult CreateOrderFromProduct()
+        {
+            string cusId = Request.Query["cusid"];
+            string proid = Request.Query["proid"];
+            string price = Request.Query["price"];
+            string status = Request.Query["status"];
+            ViewBag.cusId = cusId; 
+            ViewBag.proid = proid;
+            ViewBag.price = price;
+            ViewBag.status = status;
+            return View(new NewOrder()); // Pass a new instance to the view for the form
+        }
 
         [HttpPost]
         public async Task<IActionResult> CreateOrder(NewOrder order)
@@ -149,6 +192,8 @@ namespace StationeryWEB.Controllers
             {
                 string responseData = await response.Content.ReadAsStringAsync();
                 LoginSuccess login = JsonConvert.DeserializeObject<LoginSuccess>(responseData);
+                string a = login.id;
+                HttpContext.Session.SetString("dealerid", a);
                 if (login.role == 0)
                 {
                     ViewBag.id = login.id;
@@ -268,7 +313,8 @@ namespace StationeryWEB.Controllers
         public async Task<IActionResult> GetOrderByDealer(string? dealerId, int page = 1, int pageSize = 10)
         {
             var client = _clientFactory.CreateClient();
-            var url = $"https://localhost:7106/api/Customer/GetOrderByDealer?page={page}&pageSize={pageSize}";
+            string dealerid = HttpContext.Session.GetString("dealerid");
+            var url = $"https://localhost:7106/api/Customer/GetOrderByDealer?dealerid={dealerid}&page={page}&pageSize={pageSize}";
 
             // Append deaId to the URL if it's not null, using HttpUtility.UrlEncode for URL encoding
             if (dealerId != null)
@@ -385,7 +431,8 @@ namespace StationeryWEB.Controllers
         public async Task<IActionResult> DeliveriesByDealer(string? dealerId, int page = 1, int pageSize = 10)
         {
             var client = _clientFactory.CreateClient();
-            var url = $"https://localhost:7106/api/Customer/DeliveriesByDealer?page={page}&pageSize={pageSize}";
+            string dealerid = HttpContext.Session.GetString("dealerid");
+            var url = $"https://localhost:7106/api/Customer/DeliveriesByDealer?dealerid={dealerid}&page={page}&pageSize={pageSize}";
 
             // Append deaId to the URL if it's not null, using HttpUtility.UrlEncode for URL encoding
             if (dealerId != null)
@@ -407,7 +454,7 @@ namespace StationeryWEB.Controllers
       
         //--------------------------Update delivery  -----------------------------//
         [HttpGet]
-        public async Task<IActionResult> UpdateDeliveryAsync()
+        public async Task<IActionResult> UpdateDelivery()
         {
             var client = _clientFactory.CreateClient();
             string id = Request.Query["id"];
@@ -427,7 +474,24 @@ namespace StationeryWEB.Controllers
                 return View();
             }
         }
+        public async Task<IActionResult> ProductDetails()
+        {
+            var client = _clientFactory.CreateClient();
+            string id = Request.Query["id"];
+            var response = await client.GetAsync($"https://localhost:7106/api/Dealer/getProductid?id={id}");
 
+            if (response.IsSuccessStatusCode)
+            {
+                string responseData = await response.Content.ReadAsStringAsync();
+                var res = JsonConvert.DeserializeObject<TblProduct>(responseData);
+                return View(res);
+            }
+            else
+            {
+                // Handle null (deserialization failed or JSON is empty)
+                return View();
+            }
+        }
 
         [HttpPost]
         public async Task<IActionResult> UpdateDelivery(UpdateDelivery updatedelivery)
@@ -527,6 +591,10 @@ namespace StationeryWEB.Controllers
         [HttpGet]
         public IActionResult CreateCustomerProduct()
         {
+            string id = Request.Query["proid"];
+            string price = Request.Query["price"];
+            ViewBag.id = id;
+            ViewBag.price = price;
             return View(new NewCustomerProduct()); // Pass a new instance to the view for the form
         }
 
@@ -546,7 +614,7 @@ namespace StationeryWEB.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     // Assuming you want to redirect the user to the Index action after successful order creation
-                    return RedirectToAction("CreateCustomerProduct");
+                    return RedirectToAction("Index");
                 }
                 else
                 {
@@ -630,8 +698,9 @@ namespace StationeryWEB.Controllers
         public async Task<IActionResult> GetCustomerProductByDealer(string? dealerId, int page = 1, int pageSize = 10)
         {
             var client = _clientFactory.CreateClient();
-            var url = $"https://localhost:7106/api/Customer/GetCustomerProductByDealer?page={page}&pageSize={pageSize}";
-
+            string dealerid = HttpContext.Session.GetString("dealerid");
+            var url = $"https://localhost:7106/api/Customer/GetCustomerProductByDealer?dealerId={dealerid}&page={page}&pageSize={pageSize}";
+           
             // Append deaId to the URL if it's not null, using HttpUtility.UrlEncode for URL encoding
             if (dealerId != null)
             {

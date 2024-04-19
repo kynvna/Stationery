@@ -1,36 +1,4 @@
-﻿@* @model IEnumerable<WeatherForecast>
-
-@{
-    ViewData["Title"] = "Weather Forecast";
-}
-
-<h2>@ViewData["Title"]</h2>
-
-@foreach (var forecast in Model)
-{
-    <div class="weather-forecast">
-        <h3>@forecast.Date.ToShortDateString()</h3>
-        <p>Temperature: @forecast.TemperatureC&deg;C</p>
-        <p>Summary: @forecast.Summary</p>
-    </div>
-} *@
-@* @model IEnumerable<StationeryAPI.ShoppingModels.TblProduct>
-
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h2>Products</h2>
-@foreach (var item in Model)
-{
-    <div>@item.ProId</div>
-    <div>@item.ProName</div>
-
-}
- *@
-
-@model ProductPageViewModel
-
+﻿@model ProductPageViewModel
 @{
     ViewData["Title"] = "Admin's Product";
     Layout = "~/Views/Shared/_DealerLayout.cshtml";

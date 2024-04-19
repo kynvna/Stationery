@@ -23,11 +23,17 @@
                             <input class="form-control" type="text" id="customerId" name="customerId" readonly value="@Model.CustomerId" placeholder="ID khách hàng" required>
                         </div>
                     </div>
-                    <div class="form-group" id="date_3">
-                        <label class="font-normal" for="orderDate">Ngày đặt</label>
-                        <div class="input-group date">
-                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                            <input class="form-control" type="date" id="orderDate" value="@Model.OrderDate.ToString("yyyy-MM-dd")" name="orderDate" required>
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="DeliveryFee">Delivery Fee</label>
+                            <input class="form-control" type="number" id="deliveryFee" name="deliveryFee" value="@Model.DeliveryFee" required step="0.01" placeholder="Phí giao hàng" />
+                        </div>
+                        <div class="col-sm-6 form-group" id="date_3">
+                            <label class="font-normal" for="orderDate">Ngày đặt</label>
+                            <div class="input-group date">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input class="form-control" type="date" id="orderDate" value="@Model.OrderDate.ToString("yyyy-MM-dd")" name="orderDate" required>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -42,30 +48,45 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-6 form-group">
-                            <label for="orderStatus">Order Status</label>
-                            <input class="form-control" type="text" id="orderStatus" name="orderStatus" value="@Model.OrderStatus" required placeholder="Trạng thái đơn" />
+                            <label for="orderStatus">Trạng thái đơn hàng</label>
+                            <select class="form-control input-sm" id="orderStatus" name="orderStatus"  required placeholder="Trạng thái thanh toán">
+                                <option value="@Model.OrderStatus" selected>@Model.OrderStatus</option>
+                                <option value="CANCELLED">CANCELLED</option>
+                                <option value="DONE">DONE</option>
+                                <option value="WAITING">WAITING</option>
+                            </select>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="DeliveryType">Delivery Type</label>
-                            <input class="form-control" type="text" id="deliveryType" name="deliveryType" value="@Model.DeliveryType" required placeholder="Đơn vị giao" />
+                            <label for="deliveryType">Phương thức giao hàng</label>
+                            <select class="form-control input-sm" id="deliveryType" name="deliveryType" required placeholder="Phương thức giao hàng">
+                                <option value="@Model.DeliveryType" selected>@Model.DeliveryType</option>
+                                <option value="NHANH">Nhanh</option>
+                                <option value="HOATOC">Hỏa tốc</option>
+                                <option value="TIETKIEM">Tiết kiệm</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <label for="DeliveryFee">Delivery Fee</label>
-                            <input class="form-control" type="number" id="deliveryFee" name="deliveryFee" value="@Model.DeliveryFee" required step="0.01" placeholder="Phí giao hàng" />
+                        <div class="form-group col-sm-6">
+                            <label for="paymentStatus">Trạng thái thanh toán</label>
+                            <select class="form-control input-sm" id="paymentStatus" name="paymentStatus" required placeholder="Trạng thái thanh toán">
+                                <option value="@Model.PaymentStatus" selected>@Model.PaymentStatus</option>
+                                <option value="DONE">DONE</option>
+                                <option value="HOLD">HOLD</option>
+                                <option value="WAITING">WAITING</option>
+                            </select>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="paymentMethod">Payment Method</label>
-                            <input class="form-control" type="text" id="paymentMethod" name="paymentMethod" value="@Model.PaymentMethod" required placeholder="Phương thức trả" />
+                            <label for="paymentMethod">Phương thức thanh toán</label>
+                            <select class="form-control input-sm" id="paymentMethod" name="paymentMethod" required placeholder="Phương thức thanh toán">
+                                <option value="@Model.PaymentMethod" selected>@Model.PaymentMethod</option>
+                                <option value="COD">COD</option>
+                                <option value="VPP">VPP</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="paymentStatus">Payment Status</label>
-                        <input class="form-control" type="text" id="paymentStatus" name="paymentStatus" value="@Model.PaymentStatus" required placeholder="Trạng thái" />
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-success btn-rounded" type="submit">Submit</button>
+                        <button class="btn btn-success btn-rounded" type="submit">Cập nhật</button>
                     </div>
                 </form>
             </div>
@@ -174,6 +195,7 @@
                             <input class="form-control" type="text" id="paymentStatus" name="paymentStatus" value="${returnorder.paymentStatus}" readonly placeholder="Trạng thái" />
                         </div>
                     </form>
+                                    <a href="/Home/GetOrderByDealer">Về trang trước</a>
                 </div>
             </div>
 

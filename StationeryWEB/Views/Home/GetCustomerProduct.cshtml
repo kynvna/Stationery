@@ -2,20 +2,45 @@
 
 @{
     ViewData["Title"] = "CustomerProduct";
+    Layout = "~/Views/Shared/_DealerLayout.cshtml";
 }
 
-<h2>CustomerProduct</h2>
 
-@foreach (var item in Model.CustomerProducts)
-{
-    <div>@item.CustomerId</div>
-    <div>@item.ProductId</div>
-    <div>@item.Price</div>
-    <div>@item.Status</div>
-  
-
-}
-
+<div class="row">
+    <div class="col-md-12">
+        <div class="ibox">
+            <div class="ibox-head">
+                <div class="ibox-title">Danh sách sản phẩm upload bởi người bán</div>
+            </div>
+            <div class="ibox-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID Khách</th>
+                                <th>ID Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.CustomerProducts)
+                            {
+                               <tr>
+                                    <td>@item.CustomerId</td>
+                                    <td>@item.ProductId</td>
+                                    <td>@item.Price</td>
+                                    <td>@item.Status</td>
+                                    <td><a href="/Home/CreateOrderFromProduct?cusid=@item.CustomerId&proid=@item.ProductId&price=@item.Price&status=@item.Status">Tạo đơn cho khách này</a></td>
+                               </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div>
     Page @Model.CurrentPage of @Model.TotalPages
 

@@ -32,3 +32,4 @@ C:\SEM3\StationeryWEB\obj\Debug\net8.0\refint\StationeryWEB.dll
 C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.pdb
 C:\SEM3\StationeryWEB\obj\Debug\net8.0\StationeryWEB.genruntimeconfig.cache
 C:\SEM3\StationeryWEB\obj\Debug\net8.0\ref\StationeryWEB.dll
+C:\SEM3\StationeryWEB\obj\Debug\net8.0\scopedcss\Views\Shared\_SingleLayout.cshtml.rz.scp.css

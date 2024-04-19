@@ -46,9 +46,16 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <label for="paymentMethod">Phương thức thanh toán</label>
-                            <input class="form-control" type="text" id="paymentMethod" name="paymentMethod" required placeholder="Phương thức thanh toán">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default dropdown-toggle" id="paymentMethod" name="paymentMethod" required placeholder="Phương thức thanh toán" type="button" data-toggle="dropdown">Chọn phương thức thanh toán <i class="fa fa-angle-down"></i></button>
+                                    <ul class="dropdown-menu">
+                                        <a class="dropdown-item" value="VPP">VPP</a>
+                                        <a class="dropdown-item" value="COD">COD</a>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group col-sm-6">
                             <label for="paymentStatus">Trạng thái thanh toán</label>

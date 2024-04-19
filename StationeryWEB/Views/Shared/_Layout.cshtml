@@ -32,6 +32,49 @@
     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            background: #eee
+        }
+
+        .ratings i {
+            font-size: 16px;
+            color: red
+        }
+
+        .strike-text {
+            color: red;
+            text-decoration: line-through
+        }
+
+        .product-image {
+            width: 100%
+        }
+
+        .dot {
+            height: 7px;
+            width: 7px;
+            margin-left: 6px;
+            margin-right: 6px;
+            margin-top: 3px;
+            background-color: blue;
+            border-radius: 50%;
+            display: inline-block
+        }
+
+        .spec-1 {
+            color: #938787;
+            font-size: 15px
+        }
+
+        h5 {
+            font-weight: 400
+        }
+
+        .para {
+            font-size: 16px
+        }
+    </style>
 </head>
 <body>
     <!-- header section start -->
@@ -45,7 +88,7 @@
                     <a asp-action="Register" asp-controller="Home">Register</a>
                 </div>
                 <span class="toggle_icon" onclick="openNav()"><img src="/images/toggle-icon.png"></span>
-                <a class="logo" href="index.html"><img src="/images/logo.png"></a></a>
+                <a class="logo" href="index.html"><img src="/images/logo.png"></a>
                 <form class="form-inline ">
                     <div class="login_text">
                         <ul>
@@ -129,7 +172,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h1 class="product_taital">Our Products</h1>
-                    <p class="product_text">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <p class="product_text">All Product is shown in this page - user can choose and add a price for bargaining.</p>
                 </div>
             </div>
             <div class="product_section_2 layout_padding">
@@ -244,5 +287,6 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
